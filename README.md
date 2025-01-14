@@ -4,7 +4,7 @@
 - RickGrymes / Ranger Rick - Project Lead / XML
 - Canonov, SirMashedPotato, Scurvyez - C# Work
 - Zeitloser, Erin, Mlie - Flying Pawn code from Birds Beyond
-- DanDman, IcingWithCheesecake, Halno, RickGrymes / Ranger Rick - Art
+- DanDman, IcingWithCheesecake, BM420, Halno, RickGrymes / Ranger Rick - Art
 - Penumbra, RickGrymes / Ranger Rick - Writing
 
 ## Notice
