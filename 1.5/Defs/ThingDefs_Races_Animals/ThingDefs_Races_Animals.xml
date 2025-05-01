@@ -660,10 +660,10 @@
                 <li>
                     <def>AnimalBaby</def>
                     <minAge>0</minAge>
-                    <soundWounded>FCP_Rad_Raven_Call</soundWounded>
-                    <soundDeath>FCP_Rad_Raven_Call</soundDeath>
-                    <soundCall>FCP_Rad_Raven_Call</soundCall>
-                    <soundAngry>FCP_Rad_Raven_Call</soundAngry>
+                    <soundWounded>FCP_Sound_Animal_Rad_Raven_Call</soundWounded>
+                    <soundDeath>FCP_Sound_Animal_Rad_Raven_Call</soundDeath>
+                    <soundCall>FCP_Sound_Animal_Rad_Raven_Call</soundCall>
+                    <soundAngry>FCP_Sound_Animal_Rad_Raven_Call</soundAngry>
                 </li>
                 <li>
                     <def>AnimalJuvenile</def>
@@ -672,9 +672,9 @@
                 <li>
                     <def>AnimalAdult</def>
                     <minAge>0.4</minAge>
-                    <soundWounded>FCP_Rad_Raven_Call</soundWounded>
-                    <soundCall>FCP_Rad_Raven_Call</soundCall>
-                    <soundAngry>FCP_Rad_Raven_Call</soundAngry>
+                    <soundWounded>FCP_Sound_Animal_Rad_Raven_Call</soundWounded>
+                    <soundCall>FCP_Sound_Animal_Rad_Raven_Call</soundCall>
+                    <soundAngry>FCP_Sound_Animal_Rad_Raven_Call</soundAngry>
                 </li>
             </lifeStageAges>
             <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
@@ -736,7 +736,7 @@
                 <flyWhenFleeing>true</flyWhenFleeing>
                 <flyWhenWanderingChance>0.5</flyWhenWanderingChance>
                 <flyWhenHunting>true</flyWhenHunting>
-                <soundOnFly>FCP_Rad_Raven_Call</soundOnFly>
+                <soundOnFly>FCP_Sound_Animal_Rad_Raven_Call</soundOnFly>
                 <flyingMoveSpeedMultiplier>5</flyingMoveSpeedMultiplier>
                 <flyingBodyGraphicData>
                     <li>
@@ -865,10 +865,10 @@
                 <li>
                     <def>AnimalBaby</def>
                     <minAge>0</minAge>
-                    <soundWounded>FCP_Radgull_Call</soundWounded>
-                    <soundDeath>FCP_Radgull_Call</soundDeath>
-                    <soundCall>FCP_Radgull_Call</soundCall>
-                    <soundAngry>FCP_Radgull_Call</soundAngry>
+                    <soundWounded>FCP_Sound_Animal_Radgull_Call</soundWounded>
+                    <soundDeath>FCP_Sound_Animal_Radgull_Call</soundDeath>
+                    <soundCall>FCP_Sound_Animal_Radgull_Call</soundCall>
+                    <soundAngry>FCP_Sound_Animal_Radgull_Call</soundAngry>
                 </li>
                 <li>
                     <def>AnimalJuvenile</def>
@@ -877,9 +877,9 @@
                 <li>
                     <def>AnimalAdult</def>
                     <minAge>0.4</minAge>
-                    <soundWounded>FCP_Radgull_Call</soundWounded>
-                    <soundCall>FCP_Radgull_Call</soundCall>
-                    <soundAngry>FCP_Radgull_Call</soundAngry>
+                    <soundWounded>FCP_Sound_Animal_Radgull_Call</soundWounded>
+                    <soundCall>FCP_Sound_Animal_Radgull_Call</soundCall>
+                    <soundAngry>FCP_Sound_Animal_Radgull_Call</soundAngry>
                 </li>
             </lifeStageAges>
             <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
@@ -941,7 +941,7 @@
                 <flyWhenFleeing>true</flyWhenFleeing>
                 <flyWhenWanderingChance>0.85</flyWhenWanderingChance>
                 <flyWhenHunting>true</flyWhenHunting>
-                <soundOnFly>FCP_Radgull_Call</soundOnFly>
+                <soundOnFly>FCP_Sound_Animal_Radgull_Call</soundOnFly>
                 <flyingMoveSpeedMultiplier>4</flyingMoveSpeedMultiplier>
                 <flyingBodyGraphicData>
                     <li>
