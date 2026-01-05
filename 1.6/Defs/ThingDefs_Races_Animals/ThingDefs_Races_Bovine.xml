@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ FCP Animals __________-->
+
+    <!--_____ Bovine _____-->
+
+    <!--___ Bighorner ___-->
+
+    <!--__ ThingDefs __-->
+
+    <!-- Bighorner Base -->
+
+    <ThingDef Abstract="True" ParentName="AnimalThingBase" Name="FCP_Animal_Bighorner_Base">
+        <statBases>
+            <MoveSpeed>4.5</MoveSpeed>
+            <MarketValue>500</MarketValue>
+            <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+            <ComfyTemperatureMax>50</ComfyTemperatureMax>
+            <ToxicEnvironmentResistance>0.85</ToxicEnvironmentResistance>
+            <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+        </statBases>
+        <tools>
+            <li>
+                <label>left hoof</label>
+                <labelNoLocation>hoof</labelNoLocation>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>8.0</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right hoof</label>
+                <labelNoLocation>hoof</labelNoLocation>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>8.0</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>7.5</power>
+                <cooldownTime>2.6</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <chanceFactor>0.7</chanceFactor>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>6</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.2</chanceFactor>
+            </li>
+        </tools>
+        <race>
+            <herdAnimal>true</herdAnimal>
+            <body>QuadrupedAnimalWithHooves</body>
+            <baseBodySize>1.8</baseBodySize>
+            <baseHungerRate>0.6</baseHungerRate>
+            <baseHealthScale>1.5</baseHealthScale>
+            <foodType>VegetarianRoughAnimal</foodType>
+            <leatherDef>Leather_Plain</leatherDef>
+            <useMeatFrom>Muffalo</useMeatFrom>
+            <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0.025</manhunterOnDamageChance>
+            <gestationPeriodDays>24</gestationPeriodDays>
+            <nameOnTameChance>1</nameOnTameChance>
+            <trainability>Intermediate</trainability>
+            <soundEating>Herbivore_Eat</soundEating>
+            <wildBiomes>
+                <AridShrubland>0.6</AridShrubland>
+                <Desert>0.5</Desert>
+                <ExtremeDesert>0.3</ExtremeDesert>
+                <TemperateForest>0.05</TemperateForest>
+            </wildBiomes>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.5, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.5, 0.5)</li>
+                    <li>(2, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeExpectancy>18</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.2</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.8</minAge>
+                    <soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+                    <soundDeath>Pawn_Muffalo_Death</soundDeath>
+                    <soundCall>Pawn_Muffalo_Call</soundCall>
+                    <soundAngry>Pawn_Muffalo_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+    </ThingDef>
+
+    <!-- Bighorner Bull -->
+
+    <ThingDef ParentName="FCP_Animal_Bighorner_Base">
+        <defName>FCP_Animal_Bighorner_Bull</defName>
+        <label>Bighorner Bull</label>
+        <description>A male bighorner, a mutated descendant of bighorn sheep. These hardy creatures are commonly used as pack animals and livestock throughout the wasteland, valued for their strength, meat, and hide. Bulls are larger and more aggressive than cows, sporting impressive curved horns.</description>
+        <statBases>
+            <MoveSpeed>4.3</MoveSpeed>
+            <MarketValue>600</MarketValue>
+            <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+        </statBases>
+        <tools>
+            <li>
+                <label>left hoof</label>
+                <labelNoLocation>hoof</labelNoLocation>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>10.0</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right hoof</label>
+                <labelNoLocation>hoof</labelNoLocation>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>10.0</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>horns</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>14.0</power>
+                <cooldownTime>2.2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <chanceFactor>0.5</chanceFactor>
+                <armorPenetration>0.2</armorPenetration>
+            </li>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>9.0</power>
+                <cooldownTime>2.6</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <chanceFactor>0.3</chanceFactor>
+            </li>
+        </tools>
+        <comps Inherit="False">
+        </comps>
+        <race>
+            <baseBodySize>2.2</baseBodySize>
+            <baseHealthScale>1.8</baseHealthScale>
+        </race>
+        <tradeTags>
+            <li>FCP_Animal_Bighorner</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- Bighorner Cow -->
+
+    <ThingDef ParentName="FCP_Animal_Bighorner_Base">
+        <defName>FCP_Animal_Bighorner_Cow</defName>
+        <label>Bighorner Cow</label>
+        <description>A female bighorner, a mutated descendant of bighorn sheep. These hardy creatures are commonly used as pack animals and livestock throughout the wasteland. Cows are prized for their ability to birth calves, making them valuable assets for any settlement. They are generally calmer than bulls but will still defend themselves when threatened.</description>
+        <tradeTags>
+            <li>FCP_Animal_Bighorner</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!--__ PawnKinds __-->
+
+    <!-- Bighorner Bull -->
+
+    <PawnKindDef Name="FCP_Animal_Bighorner_Bull_Kind" ParentName="AnimalKindBase">
+        <defName>FCP_Animal_Bighorner_Bull</defName>
+        <label>Bighorner Bull</label>
+        <race>FCP_Animal_Bighorner_Bull</race>
+        <combatPower>100</combatPower>
+        <canArriveManhunter>false</canArriveManhunter>
+        <ecoSystemWeight>0.8</ecoSystemWeight>
+        <wildGroupSize>
+            <min>2</min>
+            <max>6</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <label>bighorner calf</label>
+                <labelPlural>bighorner calves</labelPlural>
+                <bodyGraphicData>
+                    <texPath>Animals/Bighorner/Bull/FCP_Bighorner_Bull</texPath>
+                    <drawSize>1.3</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Bighorner/Bull/FCP_Bighorner_Bull_dead</texPath>
+                    <drawSize>1.3</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Bighorner/Bull/FCP_Bighorner_Bull</texPath>
+                    <drawSize>2.0</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.5, 0.37)</volume>
+                        <offset>(0,0,-0.05)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Bighorner/Bull/FCP_Bighorner_Bull_dead</texPath>
+                    <drawSize>2.0</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Bighorner/Bull/FCP_Bighorner_Bull</texPath>
+                    <drawSize>2.4</drawSize>
+                    <shadowData>
+                        <volume>(0.5, 0.6, 0.45)</volume>
+                        <offset>(0,0,-0.05)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Bighorner/Bull/FCP_Bighorner_Bull_dead</texPath>
+                    <drawSize>2.4</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
+    <!-- Bighorner Cow -->
+
+    <PawnKindDef Name="FCP_Animal_Bighorner_Cow_Kind" ParentName="AnimalKindBase">
+        <defName>FCP_Animal_Bighorner_Cow</defName>
+        <label>Bighorner Cow</label>
+        <race>FCP_Animal_Bighorner_Cow</race>
+        <combatPower>85</combatPower>
+        <canArriveManhunter>false</canArriveManhunter>
+        <ecoSystemWeight>0.8</ecoSystemWeight>
+        <wildGroupSize>
+            <min>2</min>
+            <max>6</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <label>bighorner calf</label>
+                <labelPlural>bighorner calves</labelPlural>
+                <bodyGraphicData>
+                    <texPath>Animals/Bighorner/Cow/FCP_Bighorner_Cow</texPath>
+                    <drawSize>1.3</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Bighorner/Cow/FCP_Bighorner_Cow_dead</texPath>
+                    <drawSize>1.3</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Bighorner/Cow/FCP_Bighorner_Cow</texPath>
+                    <drawSize>1.95</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.5, 0.37)</volume>
+                        <offset>(0,0,-0.05)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Bighorner/Cow/FCP_Bighorner_Cow_dead</texPath>
+                    <drawSize>1.95</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Bighorner/Cow/FCP_Bighorner_Cow</texPath>
+                    <drawSize>2.25</drawSize>
+                    <shadowData>
+                        <volume>(0.5, 0.6, 0.45)</volume>
+                        <offset>(0,0,-0.05)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Bighorner/Cow/FCP_Bighorner_Cow_dead</texPath>
+                    <drawSize>2.25</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
+</Defs>

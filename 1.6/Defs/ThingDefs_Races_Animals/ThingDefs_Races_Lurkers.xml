@@ -1,0 +1,1047 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ FCP Animals __________-->
+
+    <!--_____ Lurkers _____-->
+
+    <!--___ Mirelurk (Normal) ___-->
+
+    <!-- ThingDef -->
+
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>FCP_Animal_Mirelurk</defName>
+        <label>Mirelurk</label>
+        <description>A heavily mutated crustacean that has grown to enormous size. These creatures have thick, chitinous shells that provide excellent protection against most weapons. Mirelurks are territorial and aggressive, using their powerful claws to defend their nesting grounds. They're typically found near bodies of water and coastal areas, scavenging for food and defending their territory with surprising ferocity.</description>
+        <statBases>
+            <MoveSpeed>2.8</MoveSpeed>
+            <MarketValue>450</MarketValue>
+            <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+            <ComfyTemperatureMax>50</ComfyTemperatureMax>
+            <ToxicEnvironmentResistance>0.95</ToxicEnvironmentResistance>
+            <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+            <LeatherAmount>0</LeatherAmount>
+        </statBases>
+        <tools>
+            <li>
+                <label>left claw</label>
+                <labelNoLocation>claw</labelNoLocation>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>16.0</power>
+                <cooldownTime>2.5</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftClaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right claw</label>
+                <labelNoLocation>claw</labelNoLocation>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>16.0</power>
+                <cooldownTime>2.5</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightClaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.15</chanceFactor>
+            </li>
+        </tools>        <comps>
+            <li Class="CompProperties_EggLayer">
+                <eggUnfertilizedDef>FCP_Egg_Beachlurk_Unfertilized</eggUnfertilizedDef>
+                <eggFertilizedDef>FCP_Egg_Beachlurk_Fertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>3</eggFertilizationCountMax>
+                <eggLayIntervalDays>20</eggLayIntervalDays>
+                <eggCountRange>2~4</eggCountRange>
+            </li>
+        </comps>        <comps>
+            <li Class="CompProperties_EggLayer">
+                <eggUnfertilizedDef>FCP_Egg_Mirelurk_Unfertilized</eggUnfertilizedDef>
+                <eggFertilizedDef>FCP_Egg_Mirelurk_Fertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>3</eggFertilizationCountMax>
+                <eggLayIntervalDays>20</eggLayIntervalDays>
+                <eggCountRange>2~4</eggCountRange>
+            </li>
+        </comps>
+        <race>
+            <body>FCP_Mirelurk_Body</body>
+            <baseBodySize>1.2</baseBodySize>
+            <baseHungerRate>0.6</baseHungerRate>
+            <baseHealthScale>1.8</baseHealthScale>
+            <foodType>OmnivoreRoughAnimal</foodType>
+            <useMeatFrom>Megaspider</useMeatFrom>
+            <manhunterOnTameFailChance>0.35</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0.50</manhunterOnDamageChance>
+            <gestationPeriodDays>18</gestationPeriodDays>
+            <nameOnTameChance>0.40</nameOnTameChance>
+            <trainability>None</trainability>
+            <predator>true</predator>
+            <maxPreyBodySize>0.8</maxPreyBodySize>
+            <soundEating>Melee_DryHit_Metal</soundEating>
+            <wildBiomes>
+                <TemperateSwamp>0.5</TemperateSwamp>
+                <TropicalSwamp>0.6</TropicalSwamp>
+                <TropicalRainforest>0.35</TropicalRainforest>
+            </wildBiomes>
+            <litterSizeCurve>
+                <points>
+                    <li>(1, 0)</li>
+                    <li>(2, 1)</li>
+                    <li>(3, 1.5)</li>
+                    <li>(4, 0.5)</li>
+                    <li>(5, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeExpectancy>15</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.2</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.45</minAge>
+                    <soundWounded>Pawn_BigInsect_Pain</soundWounded>
+                    <soundDeath>Pawn_BigInsect_Death</soundDeath>
+                    <soundCall>Pawn_BigInsect_Call</soundCall>
+                    <soundAngry>Pawn_BigInsect_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>FCP_Animal_Uncommon</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- PawnKind -->
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>FCP_Animal_Mirelurk</defName>
+        <label>Mirelurk</label>
+        <race>FCP_Animal_Mirelurk</race>
+        <combatPower>85</combatPower>
+        <canArriveManhunter>true</canArriveManhunter>
+        <ecoSystemWeight>0.6</ecoSystemWeight>
+        <wildGroupSize>
+            <min>1</min>
+            <max>3</max>
+        </wildGroupSize>
+        <alternateGraphics>
+            <li>
+                <texPath>Animals/Mirelurk/Mirelurk/FCP_Mirelurk</texPath>
+            </li>
+            <li>
+                <texPath>Animals/Mirelurk/Mirelurk/FCP_Mirelurk</texPath>
+                <color>(0.620, 0.655, 0.459)</color>
+            </li>
+            <li>
+                <texPath>Animals/Mirelurk/Mirelurk/FCP_Mirelurk</texPath>
+                <color>(0.525, 0.533, 0.412)</color>
+            </li>
+        </alternateGraphics>
+        <lifeStages>
+            <li>
+                <label>mirelurk hatchling</label>
+                <labelPlural>mirelurk hatchlings</labelPlural>
+                <bodyGraphicData>
+                    <texPath>Animals/Mirelurk/Mirelurk/FCP_Mirelurk</texPath>
+                    <drawSize>1.4</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Mirelurk/Mirelurk/FCP_Mirelurk_Dessicated</texPath>
+                    <drawSize>1.4</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Mirelurk/Mirelurk/FCP_Mirelurk</texPath>
+                    <drawSize>1.8</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.5, 0.4)</volume>
+                        <offset>(0,0,-0.15)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Mirelurk/Mirelurk/FCP_Mirelurk_Dessicated</texPath>
+                    <drawSize>1.8</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Mirelurk/Mirelurk/FCP_Mirelurk</texPath>
+                    <drawSize>2.2</drawSize>
+                    <shadowData>
+                        <volume>(0.5, 0.6, 0.5)</volume>
+                        <offset>(0,0,-0.15)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Mirelurk/Mirelurk/FCP_Mirelurk_Dessicated</texPath>
+                    <drawSize>2.2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
+    <!--___ Beachlurk (Beach Variant) ___-->
+
+    <!-- ThingDef -->
+
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>FCP_Animal_Beachlurk</defName>
+        <label>Beachlurk</label>
+        <description>A coastal variant of the mirelurk that has adapted to sandy beach environments. These creatures have lighter-colored shells that blend with beach sand, making them harder to spot until they emerge from the surf. Beachlurks are slightly more aggressive than their swamp-dwelling cousins and often bury themselves in sand to ambush prey.</description>
+        <statBases>
+            <MoveSpeed>2.8</MoveSpeed>
+            <MarketValue>450</MarketValue>
+            <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+            <ComfyTemperatureMax>55</ComfyTemperatureMax>
+            <ToxicEnvironmentResistance>0.95</ToxicEnvironmentResistance>
+            <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+            <LeatherAmount>0</LeatherAmount>
+        </statBases>
+        <tools>
+            <li>
+                <label>left claw</label>
+                <labelNoLocation>claw</labelNoLocation>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>16.0</power>
+                <cooldownTime>2.5</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftClaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right claw</label>
+                <labelNoLocation>claw</labelNoLocation>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>16.0</power>
+                <cooldownTime>2.5</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightClaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.15</chanceFactor>
+            </li>
+        </tools>
+        <comps>
+            <li Class="CompProperties_EggLayer">
+                <eggUnfertilizedDef>FCP_Egg_Beachlurk_Unfertilized</eggUnfertilizedDef>
+                <eggFertilizedDef>FCP_Egg_Beachlurk_Fertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>3</eggFertilizationCountMax>
+                <eggLayIntervalDays>20</eggLayIntervalDays>
+                <eggCountRange>2~4</eggCountRange>
+            </li>
+        </comps>
+        <race>
+            <body>FCP_Mirelurk_Body</body>
+            <baseBodySize>1.2</baseBodySize>
+            <baseHungerRate>0.6</baseHungerRate>
+            <baseHealthScale>1.8</baseHealthScale>
+            <foodType>OmnivoreRoughAnimal</foodType>
+            <useMeatFrom>Megaspider</useMeatFrom>
+            <manhunterOnTameFailChance>0.40</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0.55</manhunterOnDamageChance>
+            <gestationPeriodDays>18</gestationPeriodDays>
+            <nameOnTameChance>0.40</nameOnTameChance>
+            <trainability>None</trainability>
+            <predator>true</predator>
+            <maxPreyBodySize>0.8</maxPreyBodySize>
+            <soundEating>Melee_DryHit_Metal</soundEating>
+            <wildBiomes>
+                <Ocean>0.8</Ocean>
+                <TemperateSwamp>0.25</TemperateSwamp>
+                <TropicalSwamp>0.3</TropicalSwamp>
+            </wildBiomes>
+            <litterSizeCurve>
+                <points>
+                    <li>(1, 0)</li>
+                    <li>(2, 1)</li>
+                    <li>(3, 1.5)</li>
+                    <li>(4, 0.5)</li>
+                    <li>(5, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeExpectancy>15</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.2</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.45</minAge>
+                    <soundWounded>Pawn_BigInsect_Pain</soundWounded>
+                    <soundDeath>Pawn_BigInsect_Death</soundDeath>
+                    <soundCall>Pawn_BigInsect_Call</soundCall>
+                    <soundAngry>Pawn_BigInsect_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>FCP_Animal_Uncommon</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- PawnKind -->
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>FCP_Animal_Beachlurk</defName>
+        <label>Beachlurk</label>
+        <race>FCP_Animal_Beachlurk</race>
+        <combatPower>85</combatPower>
+        <canArriveManhunter>true</canArriveManhunter>
+        <ecoSystemWeight>0.6</ecoSystemWeight>
+        <wildGroupSize>
+            <min>1</min>
+            <max>3</max>
+        </wildGroupSize>
+        <alternateGraphics>
+            <li>
+                <texPath>Animals/Mirelurk/Beachlurk/FCP_Beachlurk</texPath>
+            </li>
+            <li>
+                <texPath>Animals/Mirelurk/Beachlurk/FCP_Beachlurk</texPath>
+                <color>(0.514, 0.420, 0.337)</color>
+            </li>
+            <li>
+                <texPath>Animals/Mirelurk/Beachlurk/FCP_Beachlurk_eastm</texPath>
+            </li>
+        </alternateGraphics>
+        <lifeStages>
+            <li>
+                <label>beachlurk hatchling</label>
+                <labelPlural>beachlurk hatchlings</labelPlural>
+                <bodyGraphicData>
+                    <texPath>Animals/Mirelurk/Beachlurk/FCP_Beachlurk</texPath>
+                    <drawSize>1.4</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Mirelurk/Beachlurk/FCP_Beachlurk_Dessicated</texPath>
+                    <drawSize>1.4</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Mirelurk/Beachlurk/FCP_Beachlurk</texPath>
+                    <drawSize>1.8</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.5, 0.4)</volume>
+                        <offset>(0,0,-0.15)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Mirelurk/Beachlurk/FCP_Beachlurk_Dessicated</texPath>
+                    <drawSize>1.8</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Mirelurk/Beachlurk/FCP_Beachlurk</texPath>
+                    <drawSize>2.2</drawSize>
+                    <shadowData>
+                        <volume>(0.5, 0.6, 0.5)</volume>
+                        <offset>(0,0,-0.15)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Mirelurk/Beachlurk/FCP_Beachlurk_Dessicated</texPath>
+                    <drawSize>2.2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
+    <!--___ Riverlurk (Fallout 3) ___-->
+
+    <!-- ThingDef -->
+
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>FCP_Animal_Riverlurk</defName>
+        <label>Riverlurk</label>
+        <description>A freshwater variant of the mirelurk found primarily in rivers and streams. These creatures have darker shells that help them blend into murky river bottoms. Riverlurks are somewhat more docile than their coastal relatives but still dangerous when threatened. They prefer fast-moving water and are excellent swimmers.</description>
+        <statBases>
+            <MoveSpeed>3.0</MoveSpeed>
+            <MarketValue>420</MarketValue>
+            <ComfyTemperatureMin>-15</ComfyTemperatureMin>
+            <ComfyTemperatureMax>45</ComfyTemperatureMax>
+            <ToxicEnvironmentResistance>0.95</ToxicEnvironmentResistance>
+            <ArmorRating_Blunt>0.22</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.28</ArmorRating_Sharp>
+            <LeatherAmount>0</LeatherAmount>
+        </statBases>
+        <tools>
+            <li>
+                <label>left claw</label>
+                <labelNoLocation>claw</labelNoLocation>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>14.0</power>
+                <cooldownTime>2.5</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right claw</label>
+                <labelNoLocation>claw</labelNoLocation>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>14.0</power>
+                <cooldownTime>2.5</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.15</chanceFactor>
+            </li>
+        </tools>
+        <comps>
+            <li Class="CompProperties_EggLayer">
+                <eggUnfertilizedDef>FCP_Egg_Riverlurk_Unfertilized</eggUnfertilizedDef>
+                <eggFertilizedDef>FCP_Egg_Riverlurk_Fertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>3</eggFertilizationCountMax>
+                <eggLayIntervalDays>20</eggLayIntervalDays>
+                <eggCountRange>2~4</eggCountRange>
+            </li>
+        </comps>        <race>
+            <body>FCP_Mirelurk_Body</body>
+            <baseBodySize>1.1</baseBodySize>
+            <baseHungerRate>0.55</baseHungerRate>
+            <baseHealthScale>1.6</baseHealthScale>
+            <foodType>OmnivoreRoughAnimal</foodType>
+            <useMeatFrom>Megaspider</useMeatFrom>
+            <manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0.45</manhunterOnDamageChance>
+            <gestationPeriodDays>18</gestationPeriodDays>
+            <nameOnTameChance>0.40</nameOnTameChance>
+            <trainability>None</trainability>
+            <predator>true</predator>
+            <maxPreyBodySize>0.7</maxPreyBodySize>
+            <soundEating>Melee_DryHit_Metal</soundEating>
+            <wildBiomes>
+                <TemperateForest>0.4</TemperateForest>
+                <TemperateSwamp>0.55</TemperateSwamp>
+                <BorealForest>0.35</BorealForest>
+                <TropicalRainforest>0.45</TropicalRainforest>
+            </wildBiomes>
+            <litterSizeCurve>
+                <points>
+                    <li>(1, 0)</li>
+                    <li>(2, 1)</li>
+                    <li>(3, 1.5)</li>
+                    <li>(4, 0.5)</li>
+                    <li>(5, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeExpectancy>14</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.2</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.45</minAge>
+                    <soundWounded>Pawn_BigInsect_Pain</soundWounded>
+                    <soundDeath>Pawn_BigInsect_Death</soundDeath>
+                    <soundCall>Pawn_BigInsect_Call</soundCall>
+                    <soundAngry>Pawn_BigInsect_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>FCP_Animal_Uncommon</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- PawnKind -->
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>FCP_Animal_Riverlurk</defName>
+        <label>Riverlurk</label>
+        <race>FCP_Animal_Riverlurk</race>
+        <combatPower>75</combatPower>
+        <canArriveManhunter>true</canArriveManhunter>
+        <ecoSystemWeight>0.55</ecoSystemWeight>
+        <wildGroupSize>
+            <min>1</min>
+            <max>3</max>
+        </wildGroupSize>
+        <alternateGraphics>
+            <li>
+                <texPath>Animals/Mirelurk/Riverlurk/FCP_Riverlurk</texPath>
+            </li>
+            <li>
+                <texPath>Animals/Mirelurk/Riverlurk/FCP_Riverlurk</texPath>
+                <color>(0.514, 0.420, 0.337)</color>
+            </li>
+            <li>
+                <texPath>Animals/Mirelurk/Riverlurk/FCP_Riverlurk</texPath>
+                <color>(0.463, 0.408, 0.357)</color>
+            </li>
+            <li>
+                <texPath>Animals/Mirelurk/Riverlurk/FCP_Riverlurk</texPath>
+                <color>(0.6, 0.5, 0.4)</color>
+            </li>
+        </alternateGraphics>
+        <lifeStages>
+            <li>
+                <label>riverlurk hatchling</label>
+                <labelPlural>riverlurk hatchlings</labelPlural>
+                <bodyGraphicData>
+                    <texPath>Animals/Mirelurk/Riverlurk/FCP_Riverlurk</texPath>
+                    <drawSize>1.3</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Mirelurk/Riverlurk/FCP_Riverlurk_Dessicated</texPath>
+                    <drawSize>1.3</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Mirelurk/Riverlurk/FCP_Riverlurk</texPath>
+                    <drawSize>1.7</drawSize>
+                    <shadowData>
+                        <volume>(0.35, 0.45, 0.35)</volume>
+                        <offset>(0,0,-0.15)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Mirelurk/Riverlurk/FCP_Riverlurk_Dessicated</texPath>
+                    <drawSize>1.7</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Mirelurk/Riverlurk/FCP_Riverlurk</texPath>
+                    <drawSize>2.1</drawSize>
+                    <shadowData>
+                        <volume>(0.45, 0.55, 0.45)</volume>
+                        <offset>(0,0,-0.15)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Mirelurk/Riverlurk/FCP_Riverlurk_Dessicated</texPath>
+                    <drawSize>2.1</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
+    <!--___ Lakelurk ___-->
+
+    <!-- ThingDef -->
+
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>FCP_Animal_Lakelurk</defName>
+        <label>Lakelurk</label>
+        <description>A highly evolved mutant creature that combines features of snapping turtles and cuttlefish. Unlike mirelurks, lakelurks are much more aggressive and possess a sonic attack that can disorient prey. Their shells are extremely tough, and they're far more intelligent than other lurk variants. Found primarily in large lakes and deep waters, they're apex aquatic predators of the wasteland.</description>
+        <statBases>
+            <MoveSpeed>3.2</MoveSpeed>
+            <MarketValue>650</MarketValue>
+            <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+            <ComfyTemperatureMax>50</ComfyTemperatureMax>
+            <ToxicEnvironmentResistance>0.95</ToxicEnvironmentResistance>
+            <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+            <LeatherAmount>0</LeatherAmount>
+        </statBases>
+        <tools>
+            <li>
+                <label>claws</label>
+                <labelNoLocation>claws</labelNoLocation>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>20.0</power>
+                <cooldownTime>2.5</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftClaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>bite</label>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>18.0</power>
+                <cooldownTime>3</cooldownTime>
+                <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+                <chanceFactor>0.7</chanceFactor>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>12</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.15</chanceFactor>
+            </li>
+        </tools>
+        <comps>
+            <li Class="CompProperties_EggLayer">
+                <eggUnfertilizedDef>FCP_Egg_Lakelurk_Unfertilized</eggUnfertilizedDef>
+                <eggFertilizedDef>FCP_Egg_Lakelurk_Fertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>2</eggFertilizationCountMax>
+                <eggLayIntervalDays>22</eggLayIntervalDays>
+                <eggCountRange>1~3</eggCountRange>
+            </li>
+        </comps>
+        <race>
+            <body>FCP_Lakelurk_Body</body>
+            <baseBodySize>1.1</baseBodySize>
+            <baseHungerRate>0.7</baseHungerRate>
+            <baseHealthScale>2.2</baseHealthScale>
+            <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+            <useMeatFrom>Megaspider</useMeatFrom>
+            <manhunterOnTameFailChance>0.50</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0.65</manhunterOnDamageChance>
+            <gestationPeriodDays>20</gestationPeriodDays>
+            <nameOnTameChance>0.50</nameOnTameChance>
+            <trainability>Intermediate</trainability>
+            <predator>true</predator>
+            <maxPreyBodySize>1.2</maxPreyBodySize>
+            <soundEating>PredatorSmall_Eat</soundEating>
+            <wildBiomes>
+                <TemperateSwamp>0.4</TemperateSwamp>
+                <TropicalSwamp>0.5</TropicalSwamp>
+                <TropicalRainforest>0.3</TropicalRainforest>
+                <Ocean>0.15</Ocean>
+            </wildBiomes>
+            <litterSizeCurve>
+                <points>
+                    <li>(1, 0)</li>
+                    <li>(2, 1)</li>
+                    <li>(3, 0.5)</li>
+                    <li>(4, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeExpectancy>18</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.25</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.5</minAge>
+                    <soundWounded>Pawn_BigInsect_Pain</soundWounded>
+                    <soundDeath>Pawn_BigInsect_Death</soundDeath>
+                    <soundCall>Pawn_BigInsect_Call</soundCall>
+                    <soundAngry>Pawn_BigInsect_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>FCP_Animal_Uncommon</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- PawnKind -->
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>FCP_Animal_Lakelurk</defName>
+        <label>Lakelurk</label>
+        <race>FCP_Animal_Lakelurk</race>
+        <combatPower>110</combatPower>
+        <canArriveManhunter>true</canArriveManhunter>
+        <ecoSystemWeight>0.7</ecoSystemWeight>
+        <wildGroupSize>
+            <min>1</min>
+            <max>2</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <label>lakelurk hatchling</label>
+                <labelPlural>lakelurk hatchlings</labelPlural>
+                <bodyGraphicData>
+                    <texPath>Animals/Lakelurk/Lakelurk/FCP_Lakelurk</texPath>
+                    <drawSize>1.6</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Lakelurk/Lakelurk/FCP_Lakelurk_Dessicated</texPath>
+                    <drawSize>1.6</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Lakelurk/Lakelurk/FCP_Lakelurk</texPath>
+                    <drawSize>2.1</drawSize>
+                    <shadowData>
+                        <volume>(0.5, 0.6, 0.5)</volume>
+                        <offset>(0,0,-0.15)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Lakelurk/Lakelurk/FCP_Lakelurk_Dessicated</texPath>
+                    <drawSize>2.1</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Lakelurk/Lakelurk/FCP_Lakelurk</texPath>
+                    <drawSize>2.6</drawSize>
+                    <shadowData>
+                        <volume>(0.6, 0.7, 0.6)</volume>
+                        <offset>(0,0,-0.15)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Lakelurk/Lakelurk/FCP_Lakelurk_Dessicated</texPath>
+                    <drawSize>2.6</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
+    <!--___ Lakelurk King ___-->
+
+    <!-- ThingDef -->
+
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>FCP_Animal_Lakelurk_King</defName>
+        <label>Lakelurk King</label>
+        <description>A massive male lakelurk that has grown to enormous proportions. Lakelurk kings are territorial apex predators that claim entire lakes as their domain. They possess enhanced sonic abilities that can stun multiple targets, incredibly thick shells, and devastating strength. These solitary giants are always male and highly aggressive, attacking anything that enters their territory. Extremely rare and highly dangerous.</description>
+        <statBases>
+            <MoveSpeed>3.5</MoveSpeed>
+            <MarketValue>1200</MarketValue>
+            <ComfyTemperatureMin>-15</ComfyTemperatureMin>
+            <ComfyTemperatureMax>55</ComfyTemperatureMax>
+            <ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+            <LeatherAmount>0</LeatherAmount>
+        </statBases>
+        <tools>
+            <li>
+                <label>left claw</label>
+                <labelNoLocation>claw</labelNoLocation>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>28.0</power>
+                <cooldownTime>2.0</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftClaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right claw</label>
+                <labelNoLocation>claw</labelNoLocation>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>28.0</power>
+                <cooldownTime>2.0</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightClaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>bite</label>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>26.0</power>
+                <cooldownTime>2.5</cooldownTime>
+                <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+                <chanceFactor>0.8</chanceFactor>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>18</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.15</chanceFactor>
+            </li>
+        </tools>
+        <race>
+            <body>FCP_Lakelurk_King_Body</body>
+            <baseBodySize>1.4</baseBodySize>
+            <baseHungerRate>0.9</baseHungerRate>
+            <baseHealthScale>2.8</baseHealthScale>
+            <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+            <useMeatFrom>Megaspider</useMeatFrom>
+            <manhunterOnTameFailChance>0.75</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0.90</manhunterOnDamageChance>
+            <nameOnTameChance>0.75</nameOnTameChance>
+            <trainability>Advanced</trainability>
+            <predator>true</predator>
+            <maxPreyBodySize>2.0</maxPreyBodySize>
+            <soundEating>PredatorSmall_Eat</soundEating>
+            <wildBiomes>
+                <TemperateSwamp>0.12</TemperateSwamp>
+                <TropicalSwamp>0.15</TropicalSwamp>
+                <TropicalRainforest>0.08</TropicalRainforest>
+                <Ocean>0.06</Ocean>
+            </wildBiomes>
+            <lifeExpectancy>25</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.3</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.6</minAge>
+                    <soundWounded>Pawn_BigInsect_Pain</soundWounded>
+                    <soundDeath>Pawn_BigInsect_Death</soundDeath>
+                    <soundCall>Pawn_BigInsect_Call</soundCall>
+                    <soundAngry>Pawn_BigInsect_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+            <gestationPeriodDays>0</gestationPeriodDays>
+        </race>
+        <tradeTags>
+            <li>FCP_Animal_Rare</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- PawnKind -->
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>FCP_Animal_Lakelurk_King</defName>
+        <label>Lakelurk King</label>
+        <race>FCP_Animal_Lakelurk_King</race>
+        <combatPower>180</combatPower>
+        <canArriveManhunter>true</canArriveManhunter>
+        <ecoSystemWeight>1.2</ecoSystemWeight>
+        <wildGroupSize>
+            <min>1</min>
+            <max>1</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <label>lakelurk king hatchling</label>
+                <labelPlural>lakelurk king hatchlings</labelPlural>
+                <bodyGraphicData>
+                    <texPath>Animals/Lakelurk/Lakelurk_King/FCP_Lakelurk_King</texPath>
+                    <drawSize>1.6</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Lakelurk/Lakelurk_King/FCP_Lakelurk_King_Dessicated</texPath>
+                    <drawSize>1.6</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Lakelurk/Lakelurk_King/FCP_Lakelurk_King</texPath>
+                    <drawSize>2.2</drawSize>
+                    <shadowData>
+                        <volume>(0.6, 0.7, 0.6)</volume>
+                        <offset>(0,0,-0.15)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Lakelurk/Lakelurk_King/FCP_Lakelurk_King_Dessicated</texPath>
+                    <drawSize>2.2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Lakelurk/Lakelurk_King/FCP_Lakelurk_King</texPath>
+                    <drawSize>2.8</drawSize>
+                    <shadowData>
+                        <volume>(0.7, 0.8, 0.7)</volume>
+                        <offset>(0,0,-0.15)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Lakelurk/Lakelurk_King/FCP_Lakelurk_King_Dessicated</texPath>
+                    <drawSize>2.8</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
+    <!--___ Mirelurk King (Bipedal Humanoid Variant) ___-->
+
+    <!-- ThingDef -->
+
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>FCP_Animal_Mirelurk_King</defName>
+        <label>Mirelurk King</label>
+        <description>A towering bipedal mutation of the mirelurk species, standing head and shoulders above its crustacean cousins. Unlike standard mirelurks, the king has evolved into a humanoid form with exposed flesh, powerful clawed hands, and the ability to emit devastating sonic screams. These apex predators are highly aggressive and territorial, representing one of the most dangerous aquatic threats in the wasteland. They are typically found defending mirelurk colonies.</description>
+        <statBases>
+            <MoveSpeed>4.0</MoveSpeed>
+            <MarketValue>1500</MarketValue>
+            <ComfyTemperatureMin>-15</ComfyTemperatureMin>
+            <ComfyTemperatureMax>55</ComfyTemperatureMax>
+            <ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
+            <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+            <LeatherAmount>0</LeatherAmount>
+        </statBases>
+        <tools>
+            <li>
+                <label>left claw</label>
+                <labelNoLocation>claw</labelNoLocation>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>30.0</power>
+                <cooldownTime>2.0</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftClaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right claw</label>
+                <labelNoLocation>claw</labelNoLocation>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>30.0</power>
+                <cooldownTime>2.0</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightClaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>bite</label>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>28.0</power>
+                <cooldownTime>2.5</cooldownTime>
+                <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+                <chanceFactor>0.8</chanceFactor>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>20</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.15</chanceFactor>
+            </li>
+        </tools>
+        <race>
+            <body>FCP_Lakelurk_King_Body</body>
+            <baseBodySize>1.6</baseBodySize>
+            <baseHungerRate>1.0</baseHungerRate>
+            <baseHealthScale>3.0</baseHealthScale>
+            <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+            <useMeatFrom>Megaspider</useMeatFrom>
+            <manhunterOnTameFailChance>0.50</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0.80</manhunterOnDamageChance>
+            <nameOnTameChance>0.8</nameOnTameChance>
+            <trainability>Advanced</trainability>
+            <predator>true</predator>
+            <maxPreyBodySize>2.5</maxPreyBodySize>
+            <soundEating>PredatorSmall_Eat</soundEating>
+            <wildBiomes>
+                <TemperateSwamp>0.06</TemperateSwamp>
+                <TropicalSwamp>0.08</TropicalSwamp>
+                <TropicalRainforest>0.04</TropicalRainforest>
+            </wildBiomes>
+            <lifeExpectancy>30</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0</minAge>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>FCP_Animal_Lurker</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- PawnKind -->
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>FCP_Animal_Mirelurk_King</defName>
+        <label>Mirelurk King</label>
+        <race>FCP_Animal_Mirelurk_King</race>
+        <combatPower>200</combatPower>
+        <canArriveManhunter>true</canArriveManhunter>
+        <ecoSystemWeight>1.2</ecoSystemWeight>
+        <wildGroupSize>
+            <min>1</min>
+            <max>1</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Mirelurk/Mirelurk_King/FCP_Mirelurk_King</texPath>
+                    <drawSize>3.0</drawSize>
+                    <shadowData>
+                        <volume>(0.6, 0.8, 0.6)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Mirelurk/Mirelurk_King/FCP_Mirelurk_King_Dessicated</texPath>
+                    <drawSize>3.0</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
+</Defs>

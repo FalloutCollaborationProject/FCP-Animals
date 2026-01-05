@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ FCP Animals __________-->
+
+    <!--_____ Geckos _____-->
+
+    <!--___ Gecko Base ___-->
+
+    <!-- Gecko Base -->
+
+    <ThingDef Abstract="True" ParentName="AnimalThingBase" Name="FCP_Animal_Gecko_Base">
+        <statBases>
+            <MoveSpeed>4.2</MoveSpeed>
+            <MarketValue>150</MarketValue>
+            <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+            <ComfyTemperatureMax>60</ComfyTemperatureMax>
+            <ToxicEnvironmentResistance>0.95</ToxicEnvironmentResistance>
+            <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
+            <LeatherAmount>20</LeatherAmount>
+        </statBases>
+        <tools>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>8.0</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <chanceFactor>0.9</chanceFactor>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>4</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.1</chanceFactor>
+            </li>
+        </tools>
+        <comps>
+            <li Class="CompProperties_EggLayer">
+                <eggUnfertilizedDef>FCP_Egg_Gecko_Unfertilized</eggUnfertilizedDef>
+                <eggFertilizedDef>FCP_Egg_Gecko_Fertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>1</eggFertilizationCountMax>
+                <eggLayIntervalDays>8</eggLayIntervalDays>
+                <eggCountRange>2~4</eggCountRange>
+            </li>
+        </comps>
+        <race>
+            <body>QuadrupedAnimalWithPawsAndTail</body>
+            <baseBodySize>0.6</baseBodySize>
+            <baseHungerRate>0.35</baseHungerRate>
+            <baseHealthScale>0.8</baseHealthScale>
+            <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+            <leatherDef>Leather_Lizard</leatherDef>
+            <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0.15</manhunterOnDamageChance>
+            <nameOnTameChance>0.5</nameOnTameChance>
+            <trainability>Intermediate</trainability>
+            <predator>true</predator>
+            <maxPreyBodySize>0.4</maxPreyBodySize>
+            <soundEating>PredatorSmall_Eat</soundEating>
+            <wildBiomes>
+                <AridShrubland>0.6</AridShrubland>
+                <Desert>0.7</Desert>
+                <ExtremeDesert>0.4</ExtremeDesert>
+                <TemperateForest>0.2</TemperateForest>
+            </wildBiomes>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.5, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(2, 1.5)</li>
+                    <li>(3, 0.5)</li>
+                    <li>(4, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeExpectancy>10</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.15</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.35</minAge>
+                    <soundWounded>Pawn_Iguana_Wounded</soundWounded>
+                    <soundDeath>Pawn_Iguana_Death</soundDeath>
+                    <soundCall>Pawn_Iguana_Call</soundCall>
+                    <soundAngry>Pawn_Iguana_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+        </race>
+    </ThingDef>
+
+    <!--___ Regular Gecko ___-->
+
+    <!-- ThingDef -->
+
+    <ThingDef ParentName="FCP_Animal_Gecko_Base">
+        <defName>FCP_Animal_Gecko</defName>
+        <label>Gecko</label>
+        <description>A large mutated gecko that has grown to the size of a small dog. These reptilian creatures are common throughout the wasteland, particularly in desert regions. While not particularly aggressive, they will defend themselves when threatened. Their meat is edible and their hide makes decent leather.</description>
+        <tradeTags>
+            <li>FCP_Animal_Gecko</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- PawnKind -->
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>FCP_Animal_Gecko</defName>
+        <label>Gecko</label>
+        <race>FCP_Animal_Gecko</race>
+        <combatPower>40</combatPower>
+        <canArriveManhunter>false</canArriveManhunter>
+        <ecoSystemWeight>0.5</ecoSystemWeight>
+        <wildGroupSize>
+            <min>1</min>
+            <max>4</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <label>gecko hatchling</label>
+                <labelPlural>gecko hatchlings</labelPlural>
+                <bodyGraphicData>
+                    <texPath>Animals/Gecko/Gecko/FCP_Gecko</texPath>
+                    <drawSize>0.8</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Gecko/Gecko/Dessicated_FCP_Gecko</texPath>
+                    <drawSize>0.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Gecko/Gecko/FCP_Gecko</texPath>
+                    <drawSize>0.75</drawSize>
+                    <shadowData>
+                        <volume>(0.2, 0.25, 0.2)</volume>
+                        <offset>(0,0,-0.1)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Gecko/Gecko/Dessicated_FCP_Gecko</texPath>
+                    <drawSize>0.75</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Gecko/Gecko/FCP_Gecko</texPath>
+                    <drawSize>1.0</drawSize>
+                    <shadowData>
+                        <volume>(0.25, 0.3, 0.25)</volume>
+                        <offset>(0,0,-0.1)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Gecko/Gecko/Dessicated_FCP_Gecko</texPath>
+                    <drawSize>1.0</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
+    <!--___ Golden Gecko ___-->
+
+    <!-- ThingDef -->
+
+    <ThingDef ParentName="FCP_Animal_Gecko_Base">
+        <defName>FCP_Animal_Golden_Gecko</defName>
+        <label>Golden Gecko</label>
+        <description>A large mutated gecko with distinctive golden scales that shimmer in the light. These creatures are prized for their valuable hide, which can be crafted into high-quality leather goods. Golden geckos are stronger and more aggressive than their common cousins, and their bite can deliver a mild poison. They are found in desert regions and rocky terrain.</description>
+        <statBases>
+            <MoveSpeed>4.0</MoveSpeed>
+            <MarketValue>400</MarketValue>
+            <ArmorRating_Blunt>0.12</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.08</ArmorRating_Sharp>
+            <LeatherAmount>35</LeatherAmount>
+        </statBases>
+        <tools>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                    <li>ToxicBite</li>
+                </capacities>
+                <power>10.0</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <chanceFactor>0.9</chanceFactor>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>5</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.1</chanceFactor>
+            </li>
+        </tools>
+        <comps>
+            <li Class="CompProperties_EggLayer">
+                <eggUnfertilizedDef>FCP_Egg_Golden_Gecko_Unfertilized</eggUnfertilizedDef>
+                <eggFertilizedDef>FCP_Egg_Golden_Gecko_Fertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>1</eggFertilizationCountMax>
+                <eggLayIntervalDays>12</eggLayIntervalDays>
+                <eggCountRange>1~2</eggCountRange>
+            </li>
+        </comps>
+        <race>
+            <baseBodySize>0.75</baseBodySize>
+            <baseHealthScale>1.0</baseHealthScale>
+            <wildBiomes>
+                <AridShrubland>0.15</AridShrubland>
+                <Desert>0.2</Desert>
+                <ExtremeDesert>0.15</ExtremeDesert>
+            </wildBiomes>
+        </race>
+        <tradeTags>
+            <li>FCP_Animal_Gecko</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- PawnKind -->
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>FCP_Animal_Golden_Gecko</defName>
+        <label>Golden Gecko</label>
+        <race>FCP_Animal_Golden_Gecko</race>
+        <combatPower>55</combatPower>
+        <canArriveManhunter>true</canArriveManhunter>
+        <ecoSystemWeight>0.6</ecoSystemWeight>
+        <wildGroupSize>
+            <min>1</min>
+            <max>3</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <label>golden gecko hatchling</label>
+                <labelPlural>golden gecko hatchlings</labelPlural>
+                <bodyGraphicData>
+                    <texPath>Animals/Gecko/Golden_Gecko/FCP_Goldengecko</texPath>
+                    <drawSize>0.8</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Gecko/Gecko/Dessicated_FCP_Gecko</texPath>
+                    <drawSize>0.55</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Gecko/Golden_Gecko/FCP_Goldengecko</texPath>
+                    <drawSize>0.85</drawSize>
+                    <shadowData>
+                        <volume>(0.25, 0.3, 0.25)</volume>
+                        <offset>(0,0,-0.1)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Gecko/Gecko/Dessicated_FCP_Gecko</texPath>
+                    <drawSize>0.85</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Gecko/Golden_Gecko/FCP_Goldengecko</texPath>
+                    <drawSize>1.15</drawSize>
+                    <shadowData>
+                        <volume>(0.3, 0.35, 0.3)</volume>
+                        <offset>(0,0,-0.1)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Gecko/Gecko/Dessicated_FCP_Gecko</texPath>
+                    <drawSize>1.15</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
+    <!--___ Green Gecko ___-->
+
+    <!-- ThingDef -->
+
+    <ThingDef ParentName="FCP_Animal_Gecko_Base">
+        <defName>FCP_Animal_Green_Gecko</defName>
+        <label>Green Gecko</label>
+        <description>A large mutated gecko with green scales and a more aggressive temperament than common geckos. Green geckos are tougher and more dangerous, with a stronger bite that can deliver toxins. They are commonly found in rocky areas and caves throughout the wasteland. Their hide is valuable and their meat is edible, though it must be properly prepared.</description>
+        <statBases>
+            <MoveSpeed>4.1</MoveSpeed>
+            <MarketValue>200</MarketValue>
+            <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+            <LeatherAmount>25</LeatherAmount>
+        </statBases>
+        <tools>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                    <li>ToxicBite</li>
+                </capacities>
+                <power>9.0</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <chanceFactor>0.9</chanceFactor>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>5</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.1</chanceFactor>
+            </li>
+        </tools>
+        <comps>
+            <li Class="CompProperties_EggLayer">
+                <eggUnfertilizedDef>FCP_Egg_Green_Gecko_Unfertilized</eggUnfertilizedDef>
+                <eggFertilizedDef>FCP_Egg_Green_Gecko_Fertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>1</eggFertilizationCountMax>
+                <eggLayIntervalDays>9</eggLayIntervalDays>
+                <eggCountRange>2~3</eggCountRange>
+            </li>
+        </comps>
+        <race>
+            <baseBodySize>0.7</baseBodySize>
+            <baseHealthScale>0.9</baseHealthScale>
+            <manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0.20</manhunterOnDamageChance>
+            <wildBiomes>
+                <AridShrubland>0.5</AridShrubland>
+                <Desert>0.6</Desert>
+                <ExtremeDesert>0.35</ExtremeDesert>
+                <TemperateForest>0.15</TemperateForest>
+            </wildBiomes>
+        </race>
+        <tradeTags>
+            <li>FCP_Animal_Gecko</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- PawnKind -->
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>FCP_Animal_Green_Gecko</defName>
+        <label>Green Gecko</label>
+        <race>FCP_Animal_Green_Gecko</race>
+        <combatPower>50</combatPower>
+        <canArriveManhunter>true</canArriveManhunter>
+        <ecoSystemWeight>0.55</ecoSystemWeight>
+        <wildGroupSize>
+            <min>1</min>
+            <max>3</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <label>green gecko hatchling</label>
+                <labelPlural>green gecko hatchlings</labelPlural>
+                <bodyGraphicData>
+                    <texPath>Animals/Gecko/Green_Gecko/FCP_Greengecko</texPath>
+                    <drawSize>0.8</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Gecko/Gecko/Dessicated_FCP_Gecko</texPath>
+                    <drawSize>0.52</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Gecko/Green_Gecko/FCP_Greengecko</texPath>
+                    <drawSize>0.8</drawSize>
+                    <shadowData>
+                        <volume>(0.22, 0.28, 0.22)</volume>
+                        <offset>(0,0,-0.1)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Gecko/Gecko/Dessicated_FCP_Gecko</texPath>
+                    <drawSize>0.8</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Gecko/Green_Gecko/FCP_Greengecko</texPath>
+                    <drawSize>1.08</drawSize>
+                    <shadowData>
+                        <volume>(0.28, 0.32, 0.28)</volume>
+                        <offset>(0,0,-0.1)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Gecko/Gecko/Dessicated_FCP_Gecko</texPath>
+                    <drawSize>1.08</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
+    <!--___ Fire Gecko ___-->
+
+    <!-- ThingDef -->
+
+    <ThingDef ParentName="FCP_Animal_Gecko_Base">
+        <defName>FCP_Animal_Fire_Gecko</defName>
+        <label>Fire Gecko</label>
+        <description>A dangerous mutated gecko with the ability to breathe fire. These fearsome creatures have developed specialized glands that allow them to expel flames at their enemies. Fire geckos are highly aggressive and territorial, making them extremely dangerous to encounter in the wild. Their unique physiology makes them resistant to heat and fire, and their hide is particularly valuable. They are typically found in hot, desert regions.</description>
+        <statBases>
+            <MoveSpeed>3.8</MoveSpeed>
+            <MarketValue>650</MarketValue>
+            <ComfyTemperatureMin>0</ComfyTemperatureMin>
+            <ComfyTemperatureMax>80</ComfyTemperatureMax>
+            <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.12</ArmorRating_Sharp>
+            <ArmorRating_Heat>0.50</ArmorRating_Heat>
+            <LeatherAmount>40</LeatherAmount>
+        </statBases>
+        <tools>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>12.0</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <chanceFactor>0.9</chanceFactor>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>6</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.1</chanceFactor>
+            </li>
+        </tools>
+        <comps>
+            <li Class="CompProperties_EggLayer">
+                <eggUnfertilizedDef>FCP_Egg_Fire_Gecko_Unfertilized</eggUnfertilizedDef>
+                <eggFertilizedDef>FCP_Egg_Fire_Gecko_Fertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>1</eggFertilizationCountMax>
+                <eggLayIntervalDays>14</eggLayIntervalDays>
+                <eggCountRange>1~2</eggCountRange>
+            </li>
+        </comps>
+        <race>
+            <baseBodySize>0.85</baseBodySize>
+            <baseHealthScale>1.2</baseHealthScale>
+            <manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0.50</manhunterOnDamageChance>
+            <wildBiomes>
+                <AridShrubland>0.08</AridShrubland>
+                <Desert>0.12</Desert>
+                <ExtremeDesert>0.1</ExtremeDesert>
+            </wildBiomes>
+        </race>
+        <tradeTags>
+            <li>FCP_Animal_Gecko</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- PawnKind -->
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>FCP_Animal_Fire_Gecko</defName>
+        <label>Fire Gecko</label>
+        <race>FCP_Animal_Fire_Gecko</race>
+        <combatPower>75</combatPower>
+        <canArriveManhunter>true</canArriveManhunter>
+        <ecoSystemWeight>0.7</ecoSystemWeight>
+        <wildGroupSize>
+            <min>1</min>
+            <max>2</max>
+        </wildGroupSize>
+        <abilities>
+            <li>FCP_Ability_Burner</li>
+        </abilities>
+        <lifeStages>
+            <li>
+                <label>fire gecko hatchling</label>
+                <labelPlural>fire gecko hatchlings</labelPlural>
+                <bodyGraphicData>
+                    <texPath>Animals/Gecko/Fire_Gecko/FCP_Firegecko</texPath>
+                    <drawSize>0.8</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Gecko/Gecko/Dessicated_FCP_Gecko</texPath>
+                    <drawSize>0.6</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Gecko/Fire_Gecko/FCP_Firegecko</texPath>
+                    <drawSize>0.95</drawSize>
+                    <shadowData>
+                        <volume>(0.28, 0.32, 0.28)</volume>
+                        <offset>(0,0,-0.1)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Gecko/Gecko/Dessicated_FCP_Gecko</texPath>
+                    <drawSize>0.95</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Gecko/Fire_Gecko/FCP_Firegecko</texPath>
+                    <drawSize>1.25</drawSize>
+                    <shadowData>
+                        <volume>(0.35, 0.4, 0.35)</volume>
+                        <offset>(0,0,-0.1)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Gecko/Gecko/Dessicated_FCP_Gecko</texPath>
+                    <drawSize>1.25</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
+</Defs>

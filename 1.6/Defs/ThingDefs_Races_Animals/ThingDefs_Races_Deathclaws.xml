@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ FCP Animals __________-->
+
+    <!--_____ Deathclaws _____-->
+
+    <!--___ Base Deathclaw ___-->
+
+    <!-- Deathclaw Base -->
+
+    <ThingDef Abstract="True" ParentName="AnimalThingBase" Name="FCP_Animal_Deathclaw_Base">
+        <statBases>
+            <MoveSpeed>6.5</MoveSpeed>
+            <MarketValue>1500</MarketValue>
+            <ComfyTemperatureMin>-40</ComfyTemperatureMin>
+            <ComfyTemperatureMax>60</ComfyTemperatureMax>
+            <ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
+            <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+        </statBases>
+        <tools>
+            <li>
+                <label>left claw</label>
+                <labelNoLocation>claw</labelNoLocation>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>32.0</power>
+                <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.45</armorPenetration>
+                <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>28</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+            <li>
+                <label>right claw</label>
+                <labelNoLocation>claw</labelNoLocation>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>32.0</power>
+                <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.45</armorPenetration>
+                <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>28</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>28.0</power>
+                <cooldownTime>2.6</cooldownTime>
+                <armorPenetration>0.30</armorPenetration>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <chanceFactor>0.7</chanceFactor>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>14</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.2</chanceFactor>
+            </li>
+        </tools>
+        <comps>
+            <li Class="CompProperties_EggLayer">
+                <eggUnfertilizedDef>FCP_Egg_Deathclaw_Unfertilized</eggUnfertilizedDef>
+                <eggFertilizedDef>FCP_Egg_Deathclaw_Fertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>2</eggFertilizationCountMax>
+                <eggLayIntervalDays>30</eggLayIntervalDays>
+                <eggCountRange>1~3</eggCountRange>
+            </li>
+        </comps>
+        <race>
+            <body>QuadrupedAnimalWithClawsTailAndJowl</body>
+            <baseBodySize>2.5</baseBodySize>
+            <baseHungerRate>1.2</baseHungerRate>
+            <baseHealthScale>4.0</baseHealthScale>
+            <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+            <leatherDef>Leather_Lizard</leatherDef>
+            <gestationPeriodDays>45</gestationPeriodDays>
+            <nameOnTameChance>1</nameOnTameChance>
+            <trainability>Advanced</trainability>
+            <manhunterOnTameFailChance>0.80</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0.90</manhunterOnDamageChance>
+            <predator>true</predator>
+            <maxPreyBodySize>2.0</maxPreyBodySize>
+            <soundEating>PredatorLarge_Eat</soundEating>
+            <wildBiomes>
+                <AridShrubland>0.15</AridShrubland>
+                <Desert>0.12</Desert>
+                <ExtremeDesert>0.08</ExtremeDesert>
+                <TemperateForest>0.10</TemperateForest>
+                <TemperateSwamp>0.05</TemperateSwamp>
+                <BorealForest>0.03</BorealForest>
+            </wildBiomes>
+            <litterSizeCurve>
+                <points>
+                    <li>(2, 0)</li>
+                    <li>(3, 1)</li>
+                    <li>(4, 1.5)</li>
+                    <li>(5, 1)</li>
+                    <li>(6, 0.5)</li>
+                    <li>(7, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeExpectancy>35</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.5</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>2.5</minAge>
+                    <soundWounded>Pawn_Bear_Injured</soundWounded>
+                    <soundDeath>Pawn_Bear_Death</soundDeath>
+                    <soundCall>Pawn_Bear_Call</soundCall>
+                    <soundAngry>Pawn_Bear_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+            <headPosPerRotation>
+                <li>(0.0, 0, 0.46)</li>
+                <li>(0.48, 0, 0.26)</li>
+                <li>(0.0, 0, 0.06)</li>
+                <li>(-0.48, 0, 0.26)</li>
+            </headPosPerRotation>
+        </race>
+    </ThingDef>
+
+    <!-- Normal Deathclaw -->
+
+    <ThingDef ParentName="FCP_Animal_Deathclaw_Base">
+        <defName>FCP_Animal_Deathclaw</defName>
+        <label>Deathclaw</label>
+        <description>A large, agile, and powerful creature with deadly claws, the deathclaw is the most fearsome predator of the wasteland. Created through pre-war genetic engineering, these apex predators are incredibly dangerous and nearly impossible to tame. They hunt in packs and can tear through armor with ease.</description>
+        <tradeTags>
+            <li>FCP_Animal_Deathclaw</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- Alpha Deathclaw -->
+
+    <ThingDef ParentName="FCP_Animal_Deathclaw_Base">
+        <defName>FCP_Animal_Alpha_Deathclaw</defName>
+        <label>Alpha Deathclaw</label>
+        <description>The largest and most dangerous deathclaws rise to dominance through combat. Alpha males are massive predators with thicker hide and more powerful attacks, while matriarch females are the mothers of the pack and lay eggs to continue the species. Both are incredibly deadly and nearly impossible to tame.</description>
+        <statBases>
+            <MoveSpeed>6.2</MoveSpeed>
+            <MarketValue>2500</MarketValue>
+            <ComfyTemperatureMin>-45</ComfyTemperatureMin>
+            <ComfyTemperatureMax>65</ComfyTemperatureMax>
+            <ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
+            <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+        </statBases>
+        <tools>
+            <li>
+                <label>left claw</label>
+                <labelNoLocation>claw</labelNoLocation>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>40.0</power>
+                <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.55</armorPenetration>
+                <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>35</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+            <li>
+                <label>right claw</label>
+                <labelNoLocation>claw</labelNoLocation>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>40.0</power>
+                <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.55</armorPenetration>
+                <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>40</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>35.0</power>
+                <cooldownTime>2.6</cooldownTime>
+                <armorPenetration>0.40</armorPenetration>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <chanceFactor>0.7</chanceFactor>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>22</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.2</chanceFactor>
+            </li>
+        </tools>
+        <race>
+            <baseBodySize>3.0</baseBodySize>
+            <baseHealthScale>5.5</baseHealthScale>
+            <wildBiomes>
+                <TemperateForest>0.02</TemperateForest>
+                <AridShrubland>0.04</AridShrubland>
+                <Desert>0.03</Desert>
+                <ExtremeDesert>0.02</ExtremeDesert>
+                <TropicalRainforest>0.02</TropicalRainforest>
+                <TropicalSwamp>0.02</TropicalSwamp>
+            </wildBiomes>
+        </race>
+        <tradeTags>
+            <li>FCP_Animal_Deathclaw</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!--__ PawnKinds __-->
+
+    <!-- Deathclaw -->
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>FCP_Animal_Deathclaw</defName>
+        <label>Deathclaw</label>
+        <race>FCP_Animal_Deathclaw</race>
+        <combatPower>450</combatPower>
+        <canArriveManhunter>true</canArriveManhunter>
+        <ecoSystemWeight>1.5</ecoSystemWeight>
+        <wildGroupSize>
+            <min>1</min>
+            <max>4</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <label>baby deathclaw</label>
+                <labelPlural>baby deathclaws</labelPlural>
+                <bodyGraphicData>
+                    <texPath>Animals/Deathclaw/Juvenile/FCP_Juvenile_Deathclaw</texPath>
+                    <drawSize>1.5</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Deathclaw/Juvenile/FCP_Juvenile_Deathclaw_Dessicated</texPath>
+                    <drawSize>1.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <label>juvenile deathclaw</label>
+                <labelPlural>juvenile deathclaws</labelPlural>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Deathclaw/Juvenile/FCP_Juvenile_Deathclaw</texPath>
+                    <drawSize>2.2</drawSize>
+                    <shadowData>
+                        <volume>(0.5, 0.6, 0.5)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Deathclaw/Juvenile/FCP_Juvenile_Deathclaw_Dessicated</texPath>
+                    <drawSize>2.2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Deathclaw/Deathclaw/FCP_Deathclaw</texPath>
+                    <drawSize>3.0</drawSize>
+                    <shadowData>
+                        <volume>(0.6, 0.8, 0.6)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Deathclaw/Deathclaw/FCP_Deathclaw_Dessicated</texPath>
+                    <drawSize>3.0</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+        <startingHediffs>
+            <li>
+                <def>FCP_Hediff_Spawn_Hostile_Animal</def>
+            </li>
+        </startingHediffs>
+    </PawnKindDef>
+
+    <!-- Alpha Deathclaw -->
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>FCP_Animal_Alpha_Deathclaw</defName>
+        <label>Alpha Deathclaw</label>
+        <labelMale>Alpha Deathclaw</labelMale>
+        <labelFemale>Matriarch Deathclaw</labelFemale>
+        <race>FCP_Animal_Alpha_Deathclaw</race>
+        <combatPower>650</combatPower>
+        <canArriveManhunter>true</canArriveManhunter>
+        <ecoSystemWeight>2.0</ecoSystemWeight>
+        <wildGroupSize>
+            <min>1</min>
+            <max>2</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <label>baby deathclaw</label>
+                <labelPlural>baby deathclaws</labelPlural>
+                <bodyGraphicData>
+                    <texPath>Animals/Deathclaw/Juvenile/FCP_Juvenile_Deathclaw</texPath>
+                    <drawSize>1.5</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Deathclaw/Juvenile/FCP_Juvenile_Deathclaw_Dessicated</texPath>
+                    <drawSize>1.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <label>juvenile deathclaw</label>
+                <labelPlural>juvenile deathclaws</labelPlural>
+                <bodyGraphicData>
+                    <texPath>Animals/Deathclaw/Juvenile/FCP_Juvenile_Deathclaw</texPath>
+                    <drawSize>2.2</drawSize>
+                    <shadowData>
+                        <volume>(0.5, 0.6, 0.5)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Deathclaw/Juvenile/FCP_Juvenile_Deathclaw_Dessicated</texPath>
+                    <drawSize>2.2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Deathclaw/Alpha/FCP_Alpha_Deathclaw</texPath>
+                    <drawSize>3.5</drawSize>
+                    <shadowData>
+                        <volume>(0.7, 0.9, 0.7)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Animals/Deathclaw/Mother/FCP_Mother_Deathclaw</texPath>
+                    <drawSize>3.2</drawSize>
+                    <shadowData>
+                        <volume>(0.65, 0.85, 0.65)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Deathclaw/Deathclaw/FCP_Alpha_Deathclaw_Dessicated</texPath>
+                    <drawSize>3.5</drawSize>
+                </dessicatedBodyGraphicData>
+                <femaleDessicatedBodyGraphicData>
+                    <texPath>Animals/Deathclaw/Mother/FCP_Mother_Deathclaw_Dessicated</texPath>
+                    <drawSize>3.2</drawSize>
+                </femaleDessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+        <startingHediffs>
+            <li>
+                <def>FCP_Hediff_Spawn_Hostile_Animal</def>
+            </li>
+        </startingHediffs>
+    </PawnKindDef>
+
+</Defs>
