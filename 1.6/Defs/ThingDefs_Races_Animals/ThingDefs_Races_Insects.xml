@@ -325,4 +325,202 @@
         </lifeStages>
     </PawnKindDef>
 
+    <!--___ Giant Mantis ___-->
+
+    <!-- ThingDef -->
+
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>FCP_Animal_Giant_Mantis</defName>
+        <label>giant mantis</label>
+        <description>A heavily mutated praying mantis grown to enormous size by prolonged radiation exposure. These aggressive predators hunt with lightning-fast reflexes and devastating raptorial forelegs capable of impaling prey in a single strike. Their chitinous exoskeleton provides considerable protection, and they're known to be territorial and highly aggressive when threatened. Found primarily in arid regions where they ambush unsuspecting victims.</description>
+        <statBases>
+            <MoveSpeed>4.8</MoveSpeed>
+            <MarketValue>350</MarketValue>
+            <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+            <ComfyTemperatureMax>60</ComfyTemperatureMax>
+            <ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.28</ArmorRating_Sharp>
+            <ToxicEnvironmentResistance>0.75</ToxicEnvironmentResistance>
+            <LeatherAmount>0</LeatherAmount>
+            <Wildness>0.85</Wildness>
+        </statBases>
+        <tools>
+            <li>
+                <label>left forelimb</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>14</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>20</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+            <li>
+                <label>right forelimb</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>14</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>20</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+            <li>
+                <label>mandibles</label>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>6</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.1</chanceFactor>
+            </li>
+        </tools>
+        <comps>
+        </comps>
+        <race>
+            <thinkTreeMain>Animal</thinkTreeMain>
+            <body>BeetleLikeWithClaw</body>
+            <baseBodySize>0.9</baseBodySize>
+            <baseHungerRate>0.45</baseHungerRate>
+            <baseHealthScale>1.0</baseHealthScale>
+            <fleshType>Insectoid</fleshType>
+            <bloodDef>Filth_BloodInsect</bloodDef>
+            <meatColor>(168,155,140)</meatColor>
+            <meatMarketValue>0.6</meatMarketValue>
+            <meatLabel>giant mantis meat</meatLabel>
+            <useMeatFrom>Megaspider</useMeatFrom>
+            <foodType>CarnivoreAnimal</foodType>
+            <lifeExpectancy>12</lifeExpectancy>
+            <manhunterOnDamageChance>0.75</manhunterOnDamageChance>
+            <manhunterOnTameFailChance>0.20</manhunterOnTameFailChance>
+            <trainability>Intermediate</trainability>
+            <predator>true</predator>
+            <maxPreyBodySize>1.0</maxPreyBodySize>
+            <canBeVacuumBurnt>false</canBeVacuumBurnt>
+            <wildBiomes>
+                <AridShrubland>0.45</AridShrubland>
+                <Desert>0.55</Desert>
+                <ExtremeDesert>0.35</ExtremeDesert>
+                <TemperateForest>0.20</TemperateForest>
+                <TropicalRainforest>0.15</TropicalRainforest>
+            </wildBiomes>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.25</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.75</minAge>
+                    <soundWounded>Pawn_BigInsect_Pain</soundWounded>
+                    <soundDeath>Pawn_BigInsect_Death</soundDeath>
+                    <soundCall>Pawn_BigInsect_Call</soundCall>
+                    <soundAngry>Pawn_BigInsect_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>FCP_Animal_Uncommon</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- PawnKind -->
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>FCP_Animal_Giant_Mantis</defName>
+        <label>giant mantis</label>
+        <race>FCP_Animal_Giant_Mantis</race>
+        <combatPower>75</combatPower>
+        <canArriveManhunter>true</canArriveManhunter>
+        <ecoSystemWeight>0.35</ecoSystemWeight>
+        <wildGroupSize>
+            <min>1</min>
+            <max>3</max>
+        </wildGroupSize>
+        <alternateGraphicChance>0.5</alternateGraphicChance>
+        <alternateGraphics>
+            <li><color>(0.50, 0.65, 0.45, 1)</color></li>
+            <li><color>(0.55, 0.70, 0.50, 1)</color></li>
+            <li><color>(0.45, 0.55, 0.40, 1)</color></li>
+            <li><color>(0.60, 0.75, 0.55, 1)</color></li>
+        </alternateGraphics>
+        <lifeStages>
+            <li>
+                <label>giant mantis nymph</label>
+                <labelPlural>giant mantis nymphs</labelPlural>
+                <bodyGraphicData>
+                    <texPath>Animals/Praying_Mantis/FCP_Mantis</texPath>
+                    <drawSize>0.7</drawSize>
+                    <color>(0.55, 0.70, 0.50)</color>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Praying_Mantis/FCP_Mantis_Dessicated</texPath>
+                    <drawSize>0.7</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Praying_Mantis/FCP_Mantis</texPath>
+                    <drawSize>1.1</drawSize>
+                    <color>(0.55, 0.70, 0.50)</color>
+                    <shadowData>
+                        <volume>(0.4, 0.5, 0.4)</volume>
+                        <offset>(0,0,-0.15)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Praying_Mantis/FCP_Mantis_Dessicated</texPath>
+                    <drawSize>1.1</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Praying_Mantis/FCP_Mantis</texPath>
+                    <drawSize>1.5</drawSize>
+                    <color>(0.55, 0.70, 0.50)</color>
+                    <shadowData>
+                        <volume>(0.6, 0.7, 0.6)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Praying_Mantis/FCP_Mantis_Dessicated</texPath>
+                    <drawSize>1.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
 </Defs>

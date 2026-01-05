@@ -292,6 +292,19 @@
             <min>3</min>
             <max>12</max>
         </wildGroupSize>
+        <alternateGraphicChance>0.85</alternateGraphicChance>
+        <alternateGraphics>
+            <li><texPath>Animals/Rad_Rabbit/Alternate/FCP_Alt_Radrabbit</texPath><color>(0.82, 0.71, 0.55, 1)</color></li>
+            <li><texPath>Animals/Rad_Rabbit/Alternate/FCP_Alt_Radrabbit</texPath><color>(0.96, 0.96, 0.96, 1)</color></li>
+            <li><texPath>Animals/Rad_Rabbit/Alternate/FCP_Alt_Radrabbit</texPath><color>(0.27, 0.27, 0.27, 1)</color></li>
+            <li><texPath>Animals/Rad_Rabbit/Alternate/FCP_Alt_Radrabbit</texPath><color>(0.75, 0.47, 0.27, 1)</color></li>
+            <li><texPath>Animals/Rad_Rabbit/Alternate/FCP_Alt_Radrabbit</texPath><color>(0.55, 0.50, 0.42, 1)</color></li>
+            <li><texPath>Animals/Rad_Rabbit/Alternate/FCP_Alt_Radrabbit</texPath><color>(0.59, 0.35, 0.27, 1)</color></li>
+            <li><texPath>Animals/Rad_Rabbit/Alternate/FCP_Alt_Radrabbit</texPath><color>(0.43, 0.35, 0.29, 1)</color></li>
+            <li><texPath>Animals/Rad_Rabbit/Alternate/FCP_Alt_Radrabbit</texPath><color>(0.78, 0.78, 0.75, 1)</color></li>
+            <li><texPath>Animals/Rad_Rabbit/Alternate/FCP_Alt_Radrabbit</texPath><color>(0.63, 0.55, 0.35, 1)</color></li>
+            <li><texPath>Animals/Rad_Rabbit/Alternate/FCP_Alt_Radrabbit</texPath><color>(0.20, 0.18, 0.16, 1)</color></li>
+        </alternateGraphics>
         <lifeStages>
             <li>
                 <label>rad rabbit kit</label>
@@ -299,6 +312,7 @@
                 <bodyGraphicData>
                     <texPath>Animals/Rad_Rabbit/FCP_RadRabbit</texPath>
                     <drawSize>0.5</drawSize>
+                    <shaderType>CutoutComplex</shaderType>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Animals/Rad_Rabbit/Dessicated_FCP_RadRabbit</texPath>
@@ -309,6 +323,7 @@
                 <bodyGraphicData>
                     <texPath>Animals/Rad_Rabbit/FCP_RadRabbit</texPath>
                     <drawSize>0.75</drawSize>
+                    <shaderType>CutoutComplex</shaderType>
                     <shadowData>
                         <volume>(0.15, 0.2, 0.15)</volume>
                         <offset>(0,0,-0.05)</offset>
@@ -323,6 +338,7 @@
                 <bodyGraphicData>
                     <texPath>Animals/Rad_Rabbit/FCP_RadRabbit</texPath>
                     <drawSize>1.0</drawSize>
+                    <shaderType>CutoutComplex</shaderType>
                     <shadowData>
                         <volume>(0.2, 0.25, 0.2)</volume>
                         <offset>(0,0,-0.05)</offset>

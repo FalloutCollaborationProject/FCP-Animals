@@ -124,7 +124,7 @@
             <li>
                 <label>Rad Chick</label>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Rad_Chicken/FCP_Rad_Chicken</texPath>
+                    <texPath>Animals/Rad_Chicken/FCP_Rad_Chicken</texPath>
                     <drawSize>0.40</drawSize>
                     <color>(223,219,108)</color>
                 </bodyGraphicData>
@@ -136,12 +136,12 @@
             <li>
                 <labelMale>Rad Cockerel</labelMale>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Rad_Chicken/FCP_Rad_Chicken</texPath>
+                    <texPath>Animals/Rad_Chicken/FCP_Rad_Chicken</texPath>
                     <drawSize>0.70</drawSize>
                     <color>(200,150,85)</color>
                 </bodyGraphicData>
                 <femaleGraphicData>
-                    <texPath>Things/Pawn/Animal/Rad_Chicken/FCP_Rad_Chicken</texPath>
+                    <texPath>Animals/Rad_Chicken/FCP_Rad_Chicken</texPath>
                     <drawSize>0.68</drawSize>
                 </femaleGraphicData>
                 <dessicatedBodyGraphicData>
@@ -155,7 +155,7 @@
             </li>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Rad_Chicken/FCP_Rad_Chicken</texPath>
+                    <texPath>Animals/Rad_Chicken/FCP_Rad_Chicken</texPath>
                     <drawSize>0.82</drawSize>
                     <color>(200,150,85)</color>
                     <shadowData>
@@ -164,7 +164,7 @@
                     </shadowData>
                 </bodyGraphicData>
                 <femaleGraphicData>
-                    <texPath>Things/Pawn/Animal/Rad_Chicken/FCP_Rad_Chicken</texPath>
+                    <texPath>Animals/Rad_Chicken/FCP_Rad_Chicken</texPath>
                     <drawSize>0.80</drawSize>
                 </femaleGraphicData>
                 <dessicatedBodyGraphicData>
@@ -305,15 +305,15 @@
                 <flyingMoveSpeedMultiplier>5</flyingMoveSpeedMultiplier>
                 <flyingBodyGraphicData>
                     <li>
-                        <texPath>Things/Pawn/Animal/Rad_Raven/FCP_Rad_Raven_flight</texPath>
+                        <texPath>Animals/Rad_Raven/FCP_Rad_Raven_flight</texPath>
                         <drawSize>1</drawSize>
                     </li>
                     <li>
-                        <texPath>Things/Pawn/Animal/Rad_Raven/FCP_Rad_Raven_flight</texPath>
+                        <texPath>Animals/Rad_Raven/FCP_Rad_Raven_flight</texPath>
                         <drawSize>1.3</drawSize>
                     </li>
                     <li>
-                        <texPath>Things/Pawn/Animal/Rad_Raven/FCP_Rad_Raven_flight</texPath>
+                        <texPath>Animals/Rad_Raven/FCP_Rad_Raven_flight</texPath>
                         <drawSize>1.4</drawSize>
                         <shadowData>
                             <volume>(0.25, 0.3, 0.25)</volume>
@@ -343,27 +343,27 @@
             <li>
                 <label>Rad Raven</label>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Rad_Raven/FCP_Rad_Raven</texPath>
+                    <texPath>Animals/Rad_Raven/FCP_Rad_Raven</texPath>
                     <drawSize>1</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Rad_Raven/FCP_Dessicated_Rad_Raven</texPath>
+                    <texPath>Animals/Rad_Raven/FCP_Dessicated_Rad_Raven</texPath>
                     <drawSize>1</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Rad_Raven/FCP_Rad_Raven</texPath>
+                    <texPath>Animals/Rad_Raven/FCP_Rad_Raven</texPath>
                     <drawSize>1.3</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Rad_Raven/FCP_Dessicated_Rad_Raven</texPath>
+                    <texPath>Animals/Rad_Raven/FCP_Dessicated_Rad_Raven</texPath>
                     <drawSize>1.3</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Rad_Raven/FCP_Rad_Raven</texPath>
+                    <texPath>Animals/Rad_Raven/FCP_Rad_Raven</texPath>
                     <drawSize>1.4</drawSize>
                     <shadowData>
                         <volume>(0.25, 0.3, 0.25)</volume>
@@ -371,7 +371,7 @@
                     </shadowData>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Rad_Raven/FCP_Dessicated_Rad_Raven</texPath>
+                    <texPath>Animals/Rad_Raven/FCP_Dessicated_Rad_Raven</texPath>
                     <drawSize>1.4</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -509,15 +509,15 @@
                 <flyingMoveSpeedMultiplier>4</flyingMoveSpeedMultiplier>
                 <flyingBodyGraphicData>
                     <li>
-                        <texPath>Things/Pawn/Animal/Radgull/FCP_Radgull_flight</texPath>
+                        <texPath>Animals/Radgull/FCP_Radgull_Flight</texPath>
                         <drawSize>1</drawSize>
                     </li>
                     <li>
-                        <texPath>Things/Pawn/Animal/Radgull/FCP_Radgull_flight</texPath>
+                        <texPath>Animals/Radgull/FCP_Radgull_Flight</texPath>
                         <drawSize>1.3</drawSize>
                     </li>
                     <li>
-                        <texPath>Things/Pawn/Animal/Radgull/FCP_Radgull_flight</texPath>
+                        <texPath>Animals/Radgull/FCP_Radgull_Flight</texPath>
                         <drawSize>1.4</drawSize>
                         <shadowData>
                             <volume>(0.25, 0.3, 0.25)</volume>
@@ -553,27 +553,27 @@
             <li>
                 <label>Radgull</label>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Radgull/FCP_Radgull</texPath>
+                    <texPath>Animals/Radgull/FCP_Radgull</texPath>
                     <drawSize>1</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Radgull/FCP_Dessicated_Radgull</texPath>
+                    <texPath>Animals/Radgull/FCP_Dessicated_Radgull</texPath>
                     <drawSize>1</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Radgull/FCP_Radgull</texPath>
+                    <texPath>Animals/Radgull/FCP_Radgull</texPath>
                     <drawSize>1.3</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Radgull/FCP_Dessicated_Radgull</texPath>
+                    <texPath>Animals/Radgull/FCP_Dessicated_Radgull</texPath>
                     <drawSize>1.3</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Radgull/FCP_Radgull</texPath>
+                    <texPath>Animals/Radgull/FCP_Radgull</texPath>
                     <drawSize>1.4</drawSize>
                     <shadowData>
                         <volume>(0.25, 0.3, 0.25)</volume>
@@ -581,7 +581,7 @@
                     </shadowData>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Radgull/FCP_Dessicated_Radgull</texPath>
+                    <texPath>Animals/Radgull/FCP_Dessicated_Radgull</texPath>
                     <drawSize>1.4</drawSize>
                 </dessicatedBodyGraphicData>
             </li>

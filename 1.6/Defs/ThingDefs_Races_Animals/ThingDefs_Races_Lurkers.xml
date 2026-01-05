@@ -631,9 +631,9 @@
         </comps>
         <race>
             <body>FCP_Lakelurk_Body</body>
-            <baseBodySize>1.1</baseBodySize>
+            <baseBodySize>1.4</baseBodySize>
             <baseHungerRate>0.7</baseHungerRate>
-            <baseHealthScale>2.2</baseHealthScale>
+            <baseHealthScale>1.4</baseHealthScale>
             <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
             <useMeatFrom>Megaspider</useMeatFrom>
             <manhunterOnTameFailChance>0.50</manhunterOnTameFailChance>
@@ -692,7 +692,7 @@
         <defName>FCP_Animal_Lakelurk</defName>
         <label>Lakelurk</label>
         <race>FCP_Animal_Lakelurk</race>
-        <combatPower>110</combatPower>
+        <combatPower>85</combatPower>
         <canArriveManhunter>true</canArriveManhunter>
         <ecoSystemWeight>0.7</ecoSystemWeight>
         <wildGroupSize>
@@ -705,17 +705,17 @@
                 <labelPlural>lakelurk hatchlings</labelPlural>
                 <bodyGraphicData>
                     <texPath>Animals/Lakelurk/Lakelurk/FCP_Lakelurk</texPath>
-                    <drawSize>1.6</drawSize>
+                    <drawSize>1.1</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Animals/Lakelurk/Lakelurk/FCP_Lakelurk_Dessicated</texPath>
-                    <drawSize>1.6</drawSize>
+                    <drawSize>1.1</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
                     <texPath>Animals/Lakelurk/Lakelurk/FCP_Lakelurk</texPath>
-                    <drawSize>2.1</drawSize>
+                    <drawSize>1.5</drawSize>
                     <shadowData>
                         <volume>(0.5, 0.6, 0.5)</volume>
                         <offset>(0,0,-0.15)</offset>
@@ -723,21 +723,21 @@
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Animals/Lakelurk/Lakelurk/FCP_Lakelurk_Dessicated</texPath>
-                    <drawSize>2.1</drawSize>
+                    <drawSize>1.5</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
                     <texPath>Animals/Lakelurk/Lakelurk/FCP_Lakelurk</texPath>
-                    <drawSize>2.6</drawSize>
+                    <drawSize>1.9</drawSize>
                     <shadowData>
-                        <volume>(0.6, 0.7, 0.6)</volume>
+                        <volume>(0.5, 0.5, 0.5)</volume>
                         <offset>(0,0,-0.15)</offset>
                     </shadowData>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Animals/Lakelurk/Lakelurk/FCP_Lakelurk_Dessicated</texPath>
-                    <drawSize>2.6</drawSize>
+                    <drawSize>1.9</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
         </lifeStages>
@@ -806,9 +806,9 @@
         </tools>
         <race>
             <body>FCP_Lakelurk_King_Body</body>
-            <baseBodySize>1.4</baseBodySize>
+            <baseBodySize>1.7</baseBodySize>
             <baseHungerRate>0.9</baseHungerRate>
-            <baseHealthScale>2.8</baseHealthScale>
+            <baseHealthScale>1.8</baseHealthScale>
             <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
             <useMeatFrom>Megaspider</useMeatFrom>
             <manhunterOnTameFailChance>0.75</manhunterOnTameFailChance>
@@ -859,7 +859,7 @@
         <defName>FCP_Animal_Lakelurk_King</defName>
         <label>Lakelurk King</label>
         <race>FCP_Animal_Lakelurk_King</race>
-        <combatPower>180</combatPower>
+        <combatPower>120</combatPower>
         <canArriveManhunter>true</canArriveManhunter>
         <ecoSystemWeight>1.2</ecoSystemWeight>
         <wildGroupSize>
@@ -872,17 +872,17 @@
                 <labelPlural>lakelurk king hatchlings</labelPlural>
                 <bodyGraphicData>
                     <texPath>Animals/Lakelurk/Lakelurk_King/FCP_Lakelurk_King</texPath>
-                    <drawSize>1.6</drawSize>
+                    <drawSize>1.2</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Animals/Lakelurk/Lakelurk_King/FCP_Lakelurk_King_Dessicated</texPath>
-                    <drawSize>1.6</drawSize>
+                    <drawSize>1.2</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
                     <texPath>Animals/Lakelurk/Lakelurk_King/FCP_Lakelurk_King</texPath>
-                    <drawSize>2.2</drawSize>
+                    <drawSize>1.8</drawSize>
                     <shadowData>
                         <volume>(0.6, 0.7, 0.6)</volume>
                         <offset>(0,0,-0.15)</offset>
@@ -890,13 +890,13 @@
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Animals/Lakelurk/Lakelurk_King/FCP_Lakelurk_King_Dessicated</texPath>
-                    <drawSize>2.2</drawSize>
+                    <drawSize>1.8</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
                     <texPath>Animals/Lakelurk/Lakelurk_King/FCP_Lakelurk_King</texPath>
-                    <drawSize>2.8</drawSize>
+                    <drawSize>2.3</drawSize>
                     <shadowData>
                         <volume>(0.7, 0.8, 0.7)</volume>
                         <offset>(0,0,-0.15)</offset>
@@ -904,7 +904,7 @@
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Animals/Lakelurk/Lakelurk_King/FCP_Lakelurk_King_Dessicated</texPath>
-                    <drawSize>2.8</drawSize>
+                    <drawSize>1.4</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
         </lifeStages>
