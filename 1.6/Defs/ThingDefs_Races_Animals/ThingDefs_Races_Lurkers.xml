@@ -86,7 +86,7 @@
             <trainability>None</trainability>
             <predator>true</predator>
             <maxPreyBodySize>0.8</maxPreyBodySize>
-            <soundEating>Melee_DryHit_Metal</soundEating>
+            <soundEating>PredatorLarge_Eat</soundEating>
             <wildBiomes>
                 <TemperateSwamp>0.5</TemperateSwamp>
                 <TropicalSwamp>0.6</TropicalSwamp>
@@ -271,7 +271,7 @@
             <trainability>None</trainability>
             <predator>true</predator>
             <maxPreyBodySize>0.8</maxPreyBodySize>
-            <soundEating>Melee_DryHit_Metal</soundEating>
+            <soundEating>PredatorLarge_Eat</soundEating>
             <wildBiomes>
                 <Ocean>0.8</Ocean>
                 <TemperateSwamp>0.25</TemperateSwamp>
@@ -457,7 +457,7 @@
             <trainability>None</trainability>
             <predator>true</predator>
             <maxPreyBodySize>0.7</maxPreyBodySize>
-            <soundEating>Melee_DryHit_Metal</soundEating>
+            <soundEating>PredatorLarge_Eat</soundEating>
             <wildBiomes>
                 <TemperateForest>0.4</TemperateForest>
                 <TemperateSwamp>0.55</TemperateSwamp>
