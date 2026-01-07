@@ -80,15 +80,6 @@
                 <chanceFactor>0.2</chanceFactor>
             </li>
         </tools>
-        <comps>
-            <li Class="CompProperties_EggLayer">
-                <eggUnfertilizedDef>FCP_Egg_Deathclaw_Unfertilized</eggUnfertilizedDef>
-                <eggFertilizedDef>FCP_Egg_Deathclaw_Fertilized</eggFertilizedDef>
-                <eggFertilizationCountMax>2</eggFertilizationCountMax>
-                <eggLayIntervalDays>30</eggLayIntervalDays>
-                <eggCountRange>1~3</eggCountRange>
-            </li>
-        </comps>
         <race>
             <body>QuadrupedAnimalWithClawsTailAndJowl</body>
             <baseBodySize>2.5</baseBodySize>
@@ -170,6 +161,15 @@
         <defName>FCP_Animal_Alpha_Deathclaw</defName>
         <label>Alpha Deathclaw</label>
         <description>The largest and most dangerous deathclaws rise to dominance through combat. Alpha males are massive predators with thicker hide and more powerful attacks, while matriarch females are the mothers of the pack and lay eggs to continue the species. Both are incredibly deadly and nearly impossible to tame.</description>
+        <comps>
+            <li Class="CompProperties_EggLayer">
+                <eggUnfertilizedDef>FCP_Egg_Deathclaw_Unfertilized</eggUnfertilizedDef>
+                <eggFertilizedDef>FCP_Egg_Deathclaw_Fertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>2</eggFertilizationCountMax>
+                <eggLayIntervalDays>30</eggLayIntervalDays>
+                <eggCountRange>1~3</eggCountRange>
+            </li>
+        </comps>
         <statBases>
             <MoveSpeed>6.2</MoveSpeed>
             <MarketValue>2500</MarketValue>
