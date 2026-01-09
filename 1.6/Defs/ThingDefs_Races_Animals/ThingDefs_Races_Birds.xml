@@ -210,7 +210,7 @@
                 <TemperateSwamp>0.3</TemperateSwamp>
             </wildBiomes>
             <trainability>Intermediate</trainability>
-            <useMeatFrom>Chicken</useMeatFrom>
+            <specificMeatDef>FCP_Meat_Poultry</specificMeatDef>
             <litterSizeCurve>
                 <points>
                     <li>(0.5, 0)</li>
@@ -406,15 +406,15 @@
             <baseHungerRate>0.15</baseHungerRate>
             <baseHealthScale>0.42</baseHealthScale>
             <foodType>OmnivoreRoughAnimal</foodType>
-            <!-- <wildBiomes>
+            <wildBiomes>
                 <TemperateForest>0.7</TemperateForest>
                 <BorealForest>0.3</BorealForest>
                 <AridShrubland>0.8</AridShrubland>
                 <Desert>0.3</Desert>
                 <TemperateSwamp>0.3</TemperateSwamp>
-            </wildBiomes> -->
+            </wildBiomes>
             <trainability>Intermediate</trainability>
-            <useMeatFrom>Chicken</useMeatFrom>
+            <specificMeatDef>FCP_Meat_Poultry</specificMeatDef>
             <litterSizeCurve>
                 <points>
                     <li>(0.5, 0)</li>
@@ -623,6 +623,7 @@
             <baseHealthScale>0.8</baseHealthScale>
             <foodType>OmnivoreRoughAnimal</foodType>
             <trainability>None</trainability>
+            <specificMeatDef>FCP_Meat_Plumb_Poultry</specificMeatDef>
             <manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
             <manhunterOnDamageChance>0.35</manhunterOnDamageChance>
             <roamMtbDays>3</roamMtbDays>

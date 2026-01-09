@@ -67,7 +67,7 @@
             <meatColor>(160,168,139)</meatColor>
             <meatMarketValue>0.4</meatMarketValue>
             <meatLabel>radroach meat</meatLabel>
-            <useMeatFrom>Megaspider</useMeatFrom>
+            <specificMeatDef>FCP_Meat_Bug</specificMeatDef>
             <foodType>OmnivoreAnimal</foodType>
             <lifeExpectancy>3</lifeExpectancy>
             <manhunterOnDamageChance>0.10</manhunterOnDamageChance>
@@ -221,7 +221,7 @@
             <meatColor>(160,255,160)</meatColor>
             <meatMarketValue>0.3</meatMarketValue>
             <meatLabel>glowing radroach meat</meatLabel>
-            <useMeatFrom>Megaspider</useMeatFrom>
+            <specificMeatDef>FCP_Meat_Plumb_Bug</specificMeatDef>
             <foodType>OmnivoreAnimal</foodType>
             <lifeExpectancy>4</lifeExpectancy>
             <manhunterOnDamageChance>0.35</manhunterOnDamageChance>
@@ -413,7 +413,7 @@
             <meatColor>(168,155,140)</meatColor>
             <meatMarketValue>0.6</meatMarketValue>
             <meatLabel>giant mantis meat</meatLabel>
-            <useMeatFrom>Megaspider</useMeatFrom>
+            <specificMeatDef>FCP_Meat_Plumb_Bug</specificMeatDef>
             <foodType>CarnivoreAnimal</foodType>
             <lifeExpectancy>12</lifeExpectancy>
             <manhunterOnDamageChance>0.75</manhunterOnDamageChance>

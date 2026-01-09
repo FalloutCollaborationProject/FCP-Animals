@@ -78,7 +78,9 @@
             <baseHungerRate>0.6</baseHungerRate>
             <baseHealthScale>1.8</baseHealthScale>
             <foodType>OmnivoreRoughAnimal</foodType>
-            <useMeatFrom>Megaspider</useMeatFrom>
+            <specificMeatDef>FCP_Meat_Crab</specificMeatDef>
+            <meatMarketValue>2.8</meatMarketValue>
+            <meatLabel>mirelurk meat</meatLabel>
             <manhunterOnTameFailChance>0.35</manhunterOnTameFailChance>
             <manhunterOnDamageChance>0.50</manhunterOnDamageChance>
             <gestationPeriodDays>18</gestationPeriodDays>
@@ -263,7 +265,9 @@
             <baseHungerRate>0.6</baseHungerRate>
             <baseHealthScale>1.8</baseHealthScale>
             <foodType>OmnivoreRoughAnimal</foodType>
-            <useMeatFrom>Megaspider</useMeatFrom>
+            <specificMeatDef>FCP_Meat_Crab</specificMeatDef>
+            <meatMarketValue>2.9</meatMarketValue>
+            <meatLabel>beachlurk meat</meatLabel>
             <manhunterOnTameFailChance>0.40</manhunterOnTameFailChance>
             <manhunterOnDamageChance>0.55</manhunterOnDamageChance>
             <gestationPeriodDays>18</gestationPeriodDays>
@@ -449,7 +453,9 @@
             <baseHungerRate>0.55</baseHungerRate>
             <baseHealthScale>1.6</baseHealthScale>
             <foodType>OmnivoreRoughAnimal</foodType>
-            <useMeatFrom>Megaspider</useMeatFrom>
+            <specificMeatDef>FCP_Meat_Crab</specificMeatDef>
+            <meatMarketValue>2.6</meatMarketValue>
+            <meatLabel>riverlurk meat</meatLabel>
             <manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
             <manhunterOnDamageChance>0.45</manhunterOnDamageChance>
             <gestationPeriodDays>18</gestationPeriodDays>
@@ -635,7 +641,9 @@
             <baseHungerRate>0.7</baseHungerRate>
             <baseHealthScale>1.4</baseHealthScale>
             <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
-            <useMeatFrom>Megaspider</useMeatFrom>
+            <specificMeatDef>FCP_Meat_Crab</specificMeatDef>
+            <meatMarketValue>3.2</meatMarketValue>
+            <meatLabel>lakelurk meat</meatLabel>
             <manhunterOnTameFailChance>0.50</manhunterOnTameFailChance>
             <manhunterOnDamageChance>0.65</manhunterOnDamageChance>
             <gestationPeriodDays>20</gestationPeriodDays>
@@ -810,7 +818,9 @@
             <baseHungerRate>0.9</baseHungerRate>
             <baseHealthScale>1.8</baseHealthScale>
             <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
-            <useMeatFrom>Megaspider</useMeatFrom>
+            <specificMeatDef>FCP_Meat_Crab</specificMeatDef>
+            <meatMarketValue>4.5</meatMarketValue>
+            <meatLabel>lakelurk king meat</meatLabel>
             <manhunterOnTameFailChance>0.75</manhunterOnTameFailChance>
             <manhunterOnDamageChance>0.90</manhunterOnDamageChance>
             <nameOnTameChance>0.75</nameOnTameChance>
@@ -977,7 +987,9 @@
             <baseHungerRate>1.0</baseHungerRate>
             <baseHealthScale>3.0</baseHealthScale>
             <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
-            <useMeatFrom>Megaspider</useMeatFrom>
+            <specificMeatDef>FCP_Meat_Crab</specificMeatDef>
+            <meatMarketValue>5.0</meatMarketValue>
+            <meatLabel>mirelurk king meat</meatLabel>
             <manhunterOnTameFailChance>0.50</manhunterOnTameFailChance>
             <manhunterOnDamageChance>0.80</manhunterOnDamageChance>
             <nameOnTameChance>0.8</nameOnTameChance>

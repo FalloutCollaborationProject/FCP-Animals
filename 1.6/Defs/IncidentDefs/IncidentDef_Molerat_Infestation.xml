@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <IncidentDef>
+    <defName>FCP_MoleratInfestation</defName>
+    <label>mole rat infestation</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>GauntletSpawners.IncidentWorker_GautletSpawner</workerClass>
+    <letterLabel>Mole rat tunneling</letterLabel>
+    <letterText>Mole rats are tunneling towards you from underground! They will break through in a few seconds and establish burrows.\n\nThe burrows will spawn more mole rats and spread throughout the area.\n\nIf you don't want the mole rats to infest the whole area, destroy the burrows. But beware - the rodents will defend their territory.</letterText>
+    <letterDef>ThreatBig</letterDef>
+    <baseChance>2.7</baseChance>
+    <minRefireDays>20</minRefireDays>
+    <category>ThreatBig</category>
+    <pointsScaleable>true</pointsScaleable>
+    <minThreatPoints>400</minThreatPoints>
+    <modExtensions>
+      <li Class="GauntletSpawners.IncidentExtension_GautletSpawnCondition">
+        <allowedTerrains>
+          <li>Soil</li>
+        </allowedTerrains>
+        <disallowedTerrains />
+        <isAllowRoofed>true</isAllowRoofed>
+        <isAllowFogged>false</isAllowFogged>
+        <radius>6</radius>
+        <factionDef>FCP_Faction_Molerat</factionDef>
+        <thingDef>FCP_Infestation_Burrow</thingDef>
+        <spawnerPoint>0</spawnerPoint>
+        <count>3</count>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+
+</Defs>

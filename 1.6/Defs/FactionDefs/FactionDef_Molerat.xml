@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Factions __________-->
+
+	<!-- Mole Rats -->
+
+    <FactionDef ParentName="FactionBase">
+        <defName>FCP_Faction_Molerat</defName>
+        <label>mole rat colony</label>
+        <description>These grotesque mutated rodents live underground in vast tunnel networks. They breed rapidly and swarm in large numbers when disturbed. Originally simple wasteland vermin, their population has exploded in underground areas where they create extensive burrow systems. They are aggressive, territorial, and attack anything that enters their domain.</description>
+        <pawnSingular>mole rat</pawnSingular>
+        <pawnsPlural>mole rats</pawnsPlural>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <fixedName>Mole Rat Colony</fixedName>
+        <factionIconPath>World/WorldObjects/Expanding/Insects</factionIconPath>
+        <colorSpectrum>
+            <li>(0.55, 0.45, 0.40)</li>
+            <li>(0.65, 0.55, 0.50)</li>
+            <li>(0.70, 0.60, 0.50)</li>
+        </colorSpectrum>
+        <raidCommonalityFromPointsCurve>
+            <points>
+                <li>(0, 0)</li>
+            </points>
+        </raidCommonalityFromPointsCurve>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(100,100)</li>
+                <li>(10000,10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <pawnGroupMakers>
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>1</commonality>
+                <options>
+                    <FCP_Animal_Molerat>10</FCP_Animal_Molerat>
+                </options>
+            </li>
+        </pawnGroupMakers>
+        <humanlikeFaction>false</humanlikeFaction>
+        <hidden>true</hidden>
+        <autoFlee>false</autoFlee>
+        <canUseAvoidGrid>false</canUseAvoidGrid>
+        <techLevel>Animal</techLevel>
+        <animalsFleeDanger>false</animalsFleeDanger>
+        <permanentEnemyToEveryoneExcept>
+            <li MayRequire="Ludeon.RimWorld.Anomaly">Entities</li>
+        </permanentEnemyToEveryoneExcept>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+        <allowedArrivalTemperatureRange>-20~50</allowedArrivalTemperatureRange>
+        <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+        <configurationListOrderPriority>999</configurationListOrderPriority>
+    </FactionDef>
+
+</Defs>

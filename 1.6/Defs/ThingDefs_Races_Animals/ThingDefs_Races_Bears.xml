@@ -77,7 +77,7 @@
             <baseHealthScale>2.8</baseHealthScale>
             <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
             <leatherDef>Leather_Bear</leatherDef>
-            <useMeatFrom>Bear_Grizzly</useMeatFrom>
+            <specificMeatDef>FCP_Meat_Prime_Beast</specificMeatDef>
             <gestationPeriodDays>28</gestationPeriodDays>
             <nameOnTameChance>1</nameOnTameChance>
             <trainability>Advanced</trainability>
@@ -270,7 +270,7 @@
             <baseHealthScale>3.2</baseHealthScale>
             <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
             <leatherDef>Leather_Bear</leatherDef>
-            <useMeatFrom>Bear_Grizzly</useMeatFrom>
+            <specificMeatDef>FCP_Meat_Prime_Beast</specificMeatDef>
             <nameOnTameChance>1</nameOnTameChance>
             <trainability>Advanced</trainability>
             <manhunterOnTameFailChance>0.95</manhunterOnTameFailChance>

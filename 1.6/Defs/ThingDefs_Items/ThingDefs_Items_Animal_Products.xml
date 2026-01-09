@@ -14,8 +14,8 @@
         <label>Deathclaw Egg (unfert.)</label>
         <description>An unfertilized deathclaw egg. These massive eggs are incredibly rare and valuable. While they can be eaten, most would consider it a waste of such a valuable commodity.</description>
         <graphicData>
-            <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
-            <color>(145,120,95)</color>
+            <texPath>Things/Items/Animal_Products/Eggs/Deathclaw/FCP_Deathclaw_Egg</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
             <drawSize>1.2</drawSize>
         </graphicData>
         <stackLimit>10</stackLimit>
@@ -34,8 +34,8 @@
         <description>A fertilized deathclaw egg. If properly incubated, this will hatch into one of the most dangerous predators in the wasteland. These eggs are extremely rare and highly sought after by beast masters and scientists alike. It can be eaten, but most would consider that a terrible waste.</description>
         <possessionCount>1</possessionCount>
         <graphicData>
-            <texPath>Animals/Deathclaw/Eggs</texPath>
-            <color>(1,1,1)</color>
+            <texPath>Things/Items/Animal_Products/Eggs/Deathclaw/FCP_Deathclaw_Egg</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
             <drawSize>1.2</drawSize>
         </graphicData>
         <stackLimit>10</stackLimit>
@@ -344,7 +344,9 @@
         <label>Mirelurk Egg (unfert.)</label>
         <description>An unfertilized mirelurk egg. These large, slimy eggs are a delicacy in some wasteland settlements. It can be eaten raw, but it's much better cooked.</description>
         <graphicData>
-            <color>(131,107,86)</color>
+            <texPath>Things/Items/Animal_Products/Eggs/Mirelurk/FCP_Lurk_Egg</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>1.1</drawSize>
         </graphicData>
         <statBases>
             <MarketValue>12.0</MarketValue>
@@ -359,7 +361,9 @@
         <label>Mirelurk Egg (fert.)</label>
         <description>A fertilized mirelurk egg. If all goes well, it should hatch into a mirelurk. It can be eaten raw, but it's much better cooked.</description>
         <graphicData>
-            <color>(131,107,86)</color>
+            <texPath>Things/Items/Animal_Products/Eggs/Mirelurk/FCP_Lurk_Egg</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>1.1</drawSize>
         </graphicData>
         <statBases>
             <MarketValue>12.0</MarketValue>

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Wasteland Meats __________-->
+    
+    <!--_____ Base Meat Parent _____-->
+
+    <ThingDef Abstract="True" Name="FCP_WastelandMeatBase" ParentName="OrganicProductBase">
+        <thingClass>ThingWithComps</thingClass>
+        <category>Item</category>
+        <tickerType>Rare</tickerType>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <stackLimit>75</stackLimit>
+        <resourceReadoutPriority>Last</resourceReadoutPriority>
+        <graphicData>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>60</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <DeteriorationRate>6</DeteriorationRate>
+            <Mass>0.03</Mass>
+            <Nutrition>0.05</Nutrition>
+            <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+        </statBases>
+        <ingestible>
+            <foodType>Meat</foodType>
+            <preferability>RawBad</preferability>
+            <tasteThought>AteRawFood</tasteThought>
+            <ingestEffect>EatMeat</ingestEffect>
+            <ingestSound>RawMeat_Eat</ingestSound>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>2</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <thingCategories>
+            <li>MeatRaw</li>
+        </thingCategories>
+    </ThingDef>
+
+    <!--_____ Beast Meats _____-->
+
+    <!--___ Beast Meat ___-->
+
+    <!-- Used by: Standard wasteland animals -->
+
+    <ThingDef ParentName="FCP_WastelandMeatBase">
+        <defName>FCP_Meat_Beast</defName>
+        <label>beast meat</label>
+        <description>Raw meat from wasteland beasts. The flesh is tougher and has a slightly off taste compared to domesticated animals, bearing the marks of radiation and harsh conditions. Suitable for meals, though it may contain trace amounts of wasteland contamination.</description>
+        <graphicData>
+            <texPath>Things/Items/Meats/Beast/Beast_Meat</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.8</MarketValue>
+        </statBases>
+        <ingestible>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>ToxicBuildup</hediffDef>
+                    <severity>0.01</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+    </ThingDef>
+
+    <!--___ Prime Beast Meat ___-->
+
+    <!-- Used by: Yao Guai, Radstag, Brahmin, and other premium large animals -->
+
+    <ThingDef ParentName="FCP_WastelandMeatBase">
+        <defName>FCP_Meat_Prime_Beast</defName>
+        <label>prime beast meat</label>
+        <description>Exceptionally high-quality meat from a healthy, well-fed wasteland beast. The muscle tissue is well-marbled and surprisingly clean considering its origins. Prime cuts like these are rare finds and command premium prices. Still carries minimal radiation exposure from the wasteland environment.</description>
+        <graphicData>
+            <texPath>Things/Items/Meats/Beast/Prime_Beast_Meat</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>2.8</MarketValue>
+            <Nutrition>0.06</Nutrition>
+        </statBases>
+        <ingestible>
+            <preferability>RawTasty</preferability>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>ToxicBuildup</hediffDef>
+                    <severity>0.005</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+    </ThingDef>
+
+    <!--_____ Bug Meats _____-->
+
+    <!--___ Bug Meat ___-->
+
+    <!-- Used by: Radroaches, standard mutant insects -->
+
+    <ThingDef ParentName="FCP_WastelandMeatBase">
+        <defName>FCP_Meat_Bug</defName>
+        <label>bug meat</label>
+        <description>Raw meat harvested from mutated wasteland insects. The flesh has an unusual texture and a faintly bitter taste. While nutritious, the high concentration of strange compounds from the insect's diet of irradiated materials makes it somewhat toxic.</description>
+        <graphicData>
+            <texPath>Things/Items/Meats/Bug/Bug_Meat</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>0.8</MarketValue>
+        </statBases>
+        <ingestible>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>ToxicBuildup</hediffDef>
+                    <severity>0.02</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+    </ThingDef>
+
+    <!--___ Plumb Bug Meat ___-->
+
+    <!-- Used by: Higher tier mutant insects, glowing variants -->
+
+    <ThingDef ParentName="FCP_WastelandMeatBase">
+        <defName>FCP_Meat_Plumb_Bug</defName>
+        <label>plumb bug meat</label>
+        <description>Exceptionally fat and juicy meat from well-fed mutant insects. The tissue is swollen with nutritious compounds, making it more palatable than typical bug meat. Wasteland survivors prize these cuts, though they still carry moderate toxicity from the creature's irradiated diet.</description>
+        <graphicData>
+            <texPath>Things/Items/Meats/Bug/Plumb_Bug_Meat</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.5</MarketValue>
+            <Nutrition>0.06</Nutrition>
+        </statBases>
+        <ingestible>
+            <preferability>RawTasty</preferability>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>ToxicBuildup</hediffDef>
+                    <severity>0.015</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+    </ThingDef>
+
+    <!--_____ Mirelurk Meats _____-->
+
+    <!--___ Mirelurk Meat ___-->
+
+    <!-- Used by: All mirelurk variants, wasteland crustaceans -->
+
+    <ThingDef ParentName="FCP_WastelandMeatBase">
+        <defName>FCP_Meat_Crab</defName>
+        <label>mirelurk meat</label>
+        <description>Firm, white meat harvested from wasteland crustaceans. The flesh is dense and flavorful, though it tends to absorb waterborne contaminants from the creature's aquatic habitat. Popular among coastal survivors despite the mild radiation.</description>
+        <graphicData>
+            <texPath>Things/Items/Meats/Fish/Crab_Meat</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>2.2</MarketValue>
+        </statBases>
+        <ingestible>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>ToxicBuildup</hediffDef>
+                    <severity>0.012</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+    </ThingDef>
+
+    <!--___ Succulent Fish Meat ___-->
+
+    <!-- Used by: Fish -->
+
+    <ThingDef ParentName="FCP_WastelandMeatBase">
+        <defName>FCP_Meat_Succulent_Fish</defName>
+        <label>succulent fish meat</label>
+        <description>Delicate, flavorful meat from wasteland fish. Its texture is tender and moist, making it a rare delicacy among survivors. While highly nutritious, it may still carry trace contaminants from irradiated waters.</description>
+        <graphicData>
+            <texPath>Things/Items/Meats/Fish/Succulent_Fish_Meat</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>3.2</MarketValue>
+            <Nutrition>0.06</Nutrition>
+        </statBases>
+        <ingestible>
+            <preferability>RawTasty</preferability>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>ToxicBuildup</hediffDef>
+                    <severity>0.008</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+    </ThingDef>
+
+    <!--_____ Herptile Meats _____-->
+
+    <!--___ Herptile Meat ___-->
+
+    <!-- Used by: Standard wasteland reptiles, geckos, small lizards -->
+
+    <ThingDef ParentName="FCP_WastelandMeatBase">
+        <defName>FCP_Meat_Herptile</defName>
+        <label>herptile meat</label>
+        <description>Lean meat from wasteland reptiles and amphibians. The flesh is stringy but edible, with a slightly gamey flavor. These creatures are particularly adept at storing radiation in their tissues, making the meat more contaminated than most.</description>
+        <graphicData>
+            <texPath>Things/Items/Meats/Herptile/Herptile_Meat</texPath>
+            <color>(220,195,170)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.5</MarketValue>
+        </statBases>
+        <ingestible>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>ToxicBuildup</hediffDef>
+                    <severity>0.018</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+    </ThingDef>
+
+    <!--___ Prime Herptile Meat ___-->
+
+    <!-- Used by: Deathclaws, large premium reptilian predators -->
+
+    <ThingDef ParentName="FCP_WastelandMeatBase">
+        <defName>FCP_Meat_Prime_Herptile</defName>
+        <label>prime herptile meat</label>
+        <description>Superior quality reptilian meat from a well-developed specimen. The muscle tissue is firm and properly developed, offering better texture and flavor than typical herptile meat. Even prime specimens carry moderate radiation from their wasteland diet.</description>
+        <graphicData>
+            <texPath>Things/Items/Meats/Herptile/Prime_Herptile_Meat</texPath>
+            <color>(220,195,170)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>2.4</MarketValue>
+            <Nutrition>0.06</Nutrition>
+        </statBases>
+        <ingestible>
+            <preferability>RawTasty</preferability>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>ToxicBuildup</hediffDef>
+                    <severity>0.012</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+    </ThingDef>
+
+    <!--_____ Poultry Meats _____-->
+
+    <!--___ Irradiated Poultry ___-->
+
+    <!-- Used by: Mutant birds, rad chickens, rad ravens -->
+
+    <ThingDef ParentName="FCP_WastelandMeatBase">
+        <defName>FCP_Meat_Poultry</defName>
+        <label>irradiated poultry</label>
+        <description>Meat from mutated wasteland birds. The flesh is recognizable as poultry but has an off-color tint and unusual smell from radiation exposure. While still edible and familiar in texture, it's clearly not from any pre-war chicken.</description>
+        <graphicData>
+            <texPath>Things/Items/Meats/Poultry/Poultry_Meat</texPath>
+            <color>(245,220,200)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.6</MarketValue>
+        </statBases>
+        <ingestible>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>ToxicBuildup</hediffDef>
+                    <severity>0.011</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+    </ThingDef>
+
+    <!--___ Plumb Irradiated Poultry ___-->
+
+    <!-- Used by: Well-fed birds, higher tier variants -->
+
+    <ThingDef ParentName="FCP_WastelandMeatBase">
+        <defName>FCP_Meat_Plumb_Poultry</defName>
+        <label>plumb irradiated poultry</label>
+        <description>Exceptionally meaty cuts from well-fed wasteland birds. The breast meat is thick and juicy, rivaling pre-war poultry in quality. Despite the radiation, this is considered a premium food source in the wasteland.</description>
+        <graphicData>
+            <texPath>Things/Items/Meats/Poultry/Plumb_Poultry_Meat</texPath>
+            <color>(245,220,200)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>2.5</MarketValue>
+            <Nutrition>0.06</Nutrition>
+        </statBases>
+        <ingestible>
+            <preferability>RawTasty</preferability>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>ToxicBuildup</hediffDef>
+                    <severity>0.007</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+    </ThingDef>
+
+    <!--_____ Varmint Meats _____-->
+
+    <!--___ Varmint Meat ___-->
+
+    <!-- Used by: Molerats, small rodents, wasteland vermin -->
+
+    <ThingDef ParentName="FCP_WastelandMeatBase">
+        <defName>FCP_Meat_Varmint</defName>
+        <label>varmint meat</label>
+        <description>Small game meat from wasteland rodents and other vermin. The portions are meager and the meat quality is poor, but beggars can't be choosers. These scavengers accumulate significant radiation from eating contaminated food scraps.</description>
+        <graphicData>
+            <texPath>Things/Items/Meats/Varmint/Varmint_Meat</texPath>
+            <color>(200,180,165)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.2</MarketValue>
+        </statBases>
+        <ingestible>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>ToxicBuildup</hediffDef>
+                    <severity>0.015</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+    </ThingDef>
+
+    <!--___ Prime Varmint Meat ___-->
+
+    <!-- Used by: Healthy varmints, well-fed specimens -->
+
+    <ThingDef ParentName="FCP_WastelandMeatBase">
+        <defName>FCP_Meat_Prime_Varmint</defName>
+        <label>prime varmint meat</label>
+        <description>Surprisingly good meat from a healthy wasteland varmint. The animal was well-fed and its meat is tender despite the small size. These cuts are prized by survivors who know how to prepare them properly. Still moderately radioactive.</description>
+        <graphicData>
+            <texPath>Things/Items/Meats/Varmint/Prime_Varmint_Meat</texPath>
+            <color>(200,180,165)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.9</MarketValue>
+            <Nutrition>0.06</Nutrition>
+        </statBases>
+        <ingestible>
+            <preferability>RawTasty</preferability>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>ToxicBuildup</hediffDef>
+                    <severity>0.010</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+    </ThingDef>
+
+</Defs>

@@ -71,7 +71,7 @@
             <gestationPeriodDays>10</gestationPeriodDays>
             <nameOnTameChance>1</nameOnTameChance>
             <trainability>Advanced</trainability>
-
+            <specificMeatDef>FCP_Meat_Prime_Varmint</specificMeatDef>
             <nuzzleMtbHours>12</nuzzleMtbHours>
             <soundEating>PredatorSmall_Eat</soundEating>
             <wildBiomes>
@@ -296,6 +296,7 @@
             <gestationPeriodDays>10</gestationPeriodDays>
             <nameOnTameChance>1</nameOnTameChance>
             <trainability>Advanced</trainability>
+            <specificMeatDef>FCP_Meat_Prime_Varmint</specificMeatDef>
             <nuzzleMtbHours>12</nuzzleMtbHours>
             <soundEating>PredatorSmall_Eat</soundEating>
             <wildBiomes>
@@ -504,6 +505,7 @@
             <gestationPeriodDays>12</gestationPeriodDays>
             <nameOnTameChance>0.75</nameOnTameChance>
             <trainability>Advanced</trainability>
+            <specificMeatDef>FCP_Meat_Prime_Varmint</specificMeatDef>
             <predator>true</predator>
             <maxPreyBodySize>1.2</maxPreyBodySize>
             <soundEating>PredatorSmall_Eat</soundEating>
