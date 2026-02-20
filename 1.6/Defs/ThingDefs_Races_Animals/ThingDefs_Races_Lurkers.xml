@@ -32,7 +32,7 @@
                 </capacities>
                 <power>16.0</power>
                 <cooldownTime>2.5</cooldownTime>
-                <linkedBodyPartsGroup>FrontLeftClaw</linkedBodyPartsGroup>
+                <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
             </li>
             <li>
                 <label>right claw</label>
@@ -42,7 +42,7 @@
                 </capacities>
                 <power>16.0</power>
                 <cooldownTime>2.5</cooldownTime>
-                <linkedBodyPartsGroup>FrontRightClaw</linkedBodyPartsGroup>
+                <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
             </li>
             <li>
                 <label>head</label>
@@ -231,7 +231,7 @@
                 </capacities>
                 <power>16.0</power>
                 <cooldownTime>2.5</cooldownTime>
-                <linkedBodyPartsGroup>FrontLeftClaw</linkedBodyPartsGroup>
+                <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
             </li>
             <li>
                 <label>right claw</label>
@@ -241,7 +241,7 @@
                 </capacities>
                 <power>16.0</power>
                 <cooldownTime>2.5</cooldownTime>
-                <linkedBodyPartsGroup>FrontRightClaw</linkedBodyPartsGroup>
+                <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
             </li>
             <li>
                 <label>head</label>
@@ -607,7 +607,7 @@
                 </capacities>
                 <power>20.0</power>
                 <cooldownTime>2.5</cooldownTime>
-                <linkedBodyPartsGroup>FrontLeftClaw</linkedBodyPartsGroup>
+                <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
             </li>
             <li>
                 <label>bite</label>
@@ -783,7 +783,7 @@
                 </capacities>
                 <power>28.0</power>
                 <cooldownTime>2.0</cooldownTime>
-                <linkedBodyPartsGroup>FrontLeftClaw</linkedBodyPartsGroup>
+                <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
             </li>
             <li>
                 <label>right claw</label>
@@ -793,7 +793,7 @@
                 </capacities>
                 <power>28.0</power>
                 <cooldownTime>2.0</cooldownTime>
-                <linkedBodyPartsGroup>FrontRightClaw</linkedBodyPartsGroup>
+                <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
             </li>
             <li>
                 <label>bite</label>
@@ -953,7 +953,7 @@
                 </capacities>
                 <power>30.0</power>
                 <cooldownTime>2.0</cooldownTime>
-                <linkedBodyPartsGroup>FrontLeftClaw</linkedBodyPartsGroup>
+                <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
             </li>
             <li>
                 <label>right claw</label>
@@ -963,7 +963,7 @@
                 </capacities>
                 <power>30.0</power>
                 <cooldownTime>2.0</cooldownTime>
-                <linkedBodyPartsGroup>FrontRightClaw</linkedBodyPartsGroup>
+                <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
             </li>
             <li>
                 <label>bite</label>

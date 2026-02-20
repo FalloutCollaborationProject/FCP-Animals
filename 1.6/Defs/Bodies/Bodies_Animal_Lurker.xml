@@ -74,7 +74,7 @@
                     <coverage>0.12</coverage>
                     <height>Middle</height>
                     <groups>
-                        <li>FrontLeftClaw</li>
+                        <li>FrontLeftClaws</li>
                     </groups>
                 </li>
                 <!-- Right claw with body part group -->
@@ -84,7 +84,7 @@
                     <coverage>0.12</coverage>
                     <height>Middle</height>
                     <groups>
-                        <li>FrontRightClaw</li>
+                        <li>FrontRightClaws</li>
                     </groups>
                 </li>
                 <!-- Walking legs -->
@@ -269,7 +269,7 @@
                                     <customLabel>left webbed claw</customLabel>
                                     <coverage>0.20</coverage>
                                     <groups>
-                                        <li>FrontLeftClaw</li>
+                                        <li>FrontLeftClaws</li>
                                     </groups>
                                 </li>
                             </parts>
@@ -295,7 +295,7 @@
                                     <customLabel>right webbed claw</customLabel>
                                     <coverage>0.20</coverage>
                                     <groups>
-                                        <li>FrontRightClaw</li>
+                                        <li>FrontRightClaws</li>
                                     </groups>
                                 </li>
                             </parts>
@@ -460,7 +460,7 @@
                                     <customLabel>left claw</customLabel>
                                     <coverage>0.25</coverage>
                                     <groups>
-                                        <li>FrontLeftClaw</li>
+                                        <li>FrontLeftClaws</li>
                                     </groups>
                                 </li>
                             </parts>
@@ -486,7 +486,7 @@
                                     <customLabel>right claw</customLabel>
                                     <coverage>0.25</coverage>
                                     <groups>
-                                        <li>FrontRightClaw</li>
+                                        <li>FrontRightClaws</li>
                                     </groups>
                                 </li>
                             </parts>
