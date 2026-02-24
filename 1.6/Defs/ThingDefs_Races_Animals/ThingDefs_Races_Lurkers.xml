@@ -933,7 +933,7 @@
     <ThingDef ParentName="AnimalThingBase">
         <defName>FCP_Animal_Mirelurk_King</defName>
         <label>Mirelurk King</label>
-        <description>A towering bipedal mutation of the mirelurk species, standing head and shoulders above its crustacean cousins. Unlike standard mirelurks, the king has evolved into a humanoid form with exposed flesh, powerful clawed hands, and the ability to emit devastating sonic screams. These apex predators are highly aggressive and territorial, representing one of the most dangerous aquatic threats in the wasteland. They are typically found defending mirelurk colonies.</description>
+        <description>Despite its name, the mirelurk king is not actually a mirelurk at all. This towering bipedal predator is believed to be a heavily mutated Jackson's chameleon, sharing no direct relation to the crustacean-like mirelurks. The name comes from their tendency to inhabit areas near mirelurk colonies. Kings stand on two legs, possess powerful clawed hands, and can emit devastating sonic screams. Their exposed flesh and lack of a protective shell is compensated by remarkable agility and deadly close-range attacks.</description>
         <statBases>
             <MoveSpeed>4.0</MoveSpeed>
             <MarketValue>1500</MarketValue>
