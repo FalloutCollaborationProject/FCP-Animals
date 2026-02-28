@@ -53,7 +53,7 @@
         <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
         <configurationListOrderPriority>999</configurationListOrderPriority>
         <modExtensions>
-            <li Class="FCP.Factions.FactionExtension_FactionExtension_FlavorOverride">
+            <li Class="FCP.Factions.FactionExtension_FlavorOverride">
                 <newLabel>Vermin Colony</newLabel>
             </li>
         </modExtensions>
