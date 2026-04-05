@@ -58,6 +58,13 @@
                     <subNodes>
                         <li Class="ThinkNode_Priority">
                             <subNodes>
+                                <li Class="ThinkNode_PrioritySorter">
+                                    <subNodes>
+                                        <li Class="JobGiver_GetFood">
+                                            <minCategory>Starving</minCategory>
+                                        </li>
+                                    </subNodes>
+                                </li>
                                 <li Class="JobGiver_Berserk">
                                     <maxAttackDistance>20</maxAttackDistance>
                                 </li>
