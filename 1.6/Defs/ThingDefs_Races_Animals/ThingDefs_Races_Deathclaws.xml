@@ -81,6 +81,8 @@
             </li>
         </tools>
         <race>
+            <thinkTreeMain>FCP_Deathclaw</thinkTreeMain>
+            <thinkTreeConstant>FCP_DeathclawConstant</thinkTreeConstant>
             <body>QuadrupedAnimalWithClawsTailAndJowl</body>
             <baseBodySize>2.5</baseBodySize>
             <baseHungerRate>1.2</baseHungerRate>
@@ -94,7 +96,7 @@
             <manhunterOnTameFailChance>0.80</manhunterOnTameFailChance>
             <manhunterOnDamageChance>0.90</manhunterOnDamageChance>
             <predator>true</predator>
-            <maxPreyBodySize>2.0</maxPreyBodySize>
+            <maxPreyBodySize>3.5</maxPreyBodySize>
             <soundEating>PredatorLarge_Eat</soundEating>
             <wildBiomes>
                 <AridShrubland>0.15</AridShrubland>
@@ -317,11 +319,6 @@
                 </dessicatedBodyGraphicData>
             </li>
         </lifeStages>
-        <startingHediffs>
-            <li>
-                <def>FCP_Hediff_Spawn_Hostile_Animal</def>
-            </li>
-        </startingHediffs>
     </PawnKindDef>
 
     <!-- Deathclaw -->
@@ -413,11 +410,6 @@
                 </femaleDessicatedBodyGraphicData>
             </li>
         </lifeStages>
-        <startingHediffs>
-            <li>
-                <def>FCP_Hediff_Spawn_Hostile_Animal</def>
-            </li>
-        </startingHediffs>
     </PawnKindDef>
 
 </Defs>
