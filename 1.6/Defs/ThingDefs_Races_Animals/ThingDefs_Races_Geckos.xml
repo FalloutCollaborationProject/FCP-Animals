@@ -41,15 +41,6 @@
                 <chanceFactor>0.1</chanceFactor>
             </li>
         </tools>
-        <comps>
-            <li Class="CompProperties_EggLayer">
-                <eggUnfertilizedDef>FCP_Egg_Gecko_Unfertilized</eggUnfertilizedDef>
-                <eggFertilizedDef>FCP_Egg_Gecko_Fertilized</eggFertilizedDef>
-                <eggFertilizationCountMax>1</eggFertilizationCountMax>
-                <eggLayIntervalDays>8</eggLayIntervalDays>
-                <eggCountRange>2~4</eggCountRange>
-            </li>
-        </comps>
         <race>
             <body>QuadrupedAnimalWithPawsAndTail</body>
             <baseBodySize>0.6</baseBodySize>
@@ -113,6 +104,15 @@
         <defName>FCP_Animal_Gecko</defName>
         <label>Gecko</label>
         <description>A large mutated gecko that has grown to the size of a small dog. These reptilian creatures are common throughout the wasteland, particularly in desert regions. While not particularly aggressive, they will defend themselves when threatened. Their meat is edible and their hide makes decent leather.</description>
+        <comps>
+            <li Class="CompProperties_EggLayer">
+                <eggUnfertilizedDef>FCP_Egg_Gecko_Unfertilized</eggUnfertilizedDef>
+                <eggFertilizedDef>FCP_Egg_Gecko_Fertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>1</eggFertilizationCountMax>
+                <eggLayIntervalDays>8</eggLayIntervalDays>
+                <eggCountRange>2~4</eggCountRange>
+            </li>
+        </comps>
         <tradeTags>
             <li>FCP_Animal_Gecko</li>
         </tradeTags>
