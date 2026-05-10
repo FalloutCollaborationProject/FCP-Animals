@@ -7,7 +7,7 @@
     <targetTags>
       <li>Map_PlayerHome</li>
     </targetTags>
-    <workerClass>GauntletSpawners.IncidentWorker_GautletSpawner</workerClass>
+    <workerClass>FCP.Core.IncidentWorker_GautletSpawner</workerClass>
     <letterLabel>Mole rat tunneling</letterLabel>
     <letterText>Mole rats are tunneling towards you from underground! They will break through in a few seconds and establish burrows.\n\nThe burrows will spawn more mole rats and spread throughout the area.\n\nIf you don't want the mole rats to infest the whole area, destroy the burrows. But beware - the rodents will defend their territory.</letterText>
     <letterDef>ThreatBig</letterDef>
@@ -17,7 +17,7 @@
     <pointsScaleable>true</pointsScaleable>
     <minThreatPoints>400</minThreatPoints>
     <modExtensions>
-      <li Class="GauntletSpawners.IncidentExtension_GautletSpawnCondition">
+      <li Class="FCP.Core.IncidentExtension_GautletSpawnCondition">
         <allowedTerrains>
           <li>Soil</li>
         </allowedTerrains>

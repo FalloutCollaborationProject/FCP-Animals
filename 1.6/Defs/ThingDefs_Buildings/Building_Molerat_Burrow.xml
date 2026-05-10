@@ -39,7 +39,7 @@
                 <canWakeUpFogged>false</canWakeUpFogged>
             </li>
             <li Class="CompProperties_WakeUpDormant" />
-            <li Class="GauntletSpawners.CompProperties_GauntletSpawner">
+            <li Class="FCP.Core.CompProperties_GauntletSpawner">
                 <possibleKindDefToSpawn>
                     <li>FCP_Animal_Molerat</li>
                 </possibleKindDefToSpawn>
