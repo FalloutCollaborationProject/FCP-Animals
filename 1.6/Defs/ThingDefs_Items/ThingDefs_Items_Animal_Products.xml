@@ -54,6 +54,108 @@
         </comps>
     </ThingDef>
 
+    <!--___ Woodland Deathclaw Egg ___-->
+
+    <!-- Unfertilized -->
+
+    <ThingDef ParentName="EggUnfertBase">
+        <defName>FCP_Egg_Woodland_Deathclaw_Unfertilized</defName>
+        <label>Woodland Deathclaw Egg (unfert.)</label>
+        <description>An unfertilized woodland deathclaw egg. Slightly smaller than the desert variety and mottled with a faint earthy pattern. A curiosity for wasteland naturalists.</description>
+        <graphicData>
+            <texPath>Things/Items/Animal_Products/Eggs/Deathclaw/FCP_Temperate_Deathclaw_Egg</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>1.2</drawSize>
+        </graphicData>
+        <stackLimit>10</stackLimit>
+        <statBases>
+            <MarketValue>120.0</MarketValue>
+            <Nutrition>2.5</Nutrition>
+            <FoodPoisonChanceFixedHuman>0.25</FoodPoisonChanceFixedHuman>
+        </statBases>
+    </ThingDef>
+
+    <!-- Fertilized -->
+
+    <ThingDef ParentName="EggFertBase">
+        <defName>FCP_Egg_Woodland_Deathclaw_Fertilized</defName>
+        <label>Woodland Deathclaw Egg (fert.)</label>
+        <description>A fertilized woodland deathclaw egg. Most will hatch into a standard woodland deathclaw, but rarely something stranger emerges — an albino, a glowing mutant, or even an ancient elder.</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <texPath>Things/Items/Animal_Products/Eggs/Deathclaw/FCP_Temperate_Deathclaw_Egg</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>1.2</drawSize>
+        </graphicData>
+        <stackLimit>10</stackLimit>
+        <statBases>
+            <MarketValue>350.0</MarketValue>
+            <Nutrition>2.5</Nutrition>
+            <FoodPoisonChanceFixedHuman>0.25</FoodPoisonChanceFixedHuman>
+        </statBases>
+        <comps>
+            <li Class="FCP.Core.CompProperties_HatcherCustom">
+                <hatcherDaystoHatch>28</hatcherDaystoHatch>
+                <hatcherPawn>FCP_Animal_Woodland_Deathclaw</hatcherPawn>
+                <weightedPawns>
+                    <li><pawnKind>FCP_Animal_Woodland_Deathclaw</pawnKind><weight>90</weight></li>
+                    <li><pawnKind>FCP_Animal_Albino_Deathclaw</pawnKind><weight>5</weight></li>
+                    <li><pawnKind>FCP_Animal_Glowing_Deathclaw</pawnKind><weight>3</weight></li>
+                    <li><pawnKind>FCP_Animal_Elder_Deathclaw</pawnKind><weight>2</weight></li>
+                </weightedPawns>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!--___ Badlands Deathclaw Egg ___-->
+
+    <!-- Unfertilized -->
+
+    <ThingDef ParentName="EggUnfertBase">
+        <defName>FCP_Egg_Badlands_Deathclaw_Unfertilized</defName>
+        <label>Badlands Deathclaw Egg (unfert.)</label>
+        <description>An unfertilized badlands deathclaw egg. The shell is unusually thick and has taken on a brownish, sun-baked hue from generations in extreme desert heat.</description>
+        <graphicData>
+            <texPath>Things/Items/Animal_Products/Eggs/Deathclaw/FCP_Temperate_Deathclaw_Egg</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(180, 155, 110)</color>
+            <drawSize>1.2</drawSize>
+        </graphicData>
+        <stackLimit>10</stackLimit>
+        <statBases>
+            <MarketValue>120.0</MarketValue>
+            <Nutrition>2.5</Nutrition>
+            <FoodPoisonChanceFixedHuman>0.25</FoodPoisonChanceFixedHuman>
+        </statBases>
+    </ThingDef>
+
+    <!-- Fertilized -->
+
+    <ThingDef ParentName="EggFertBase">
+        <defName>FCP_Egg_Badlands_Deathclaw_Fertilized</defName>
+        <label>Badlands Deathclaw Egg (fert.)</label>
+        <description>A fertilized badlands deathclaw egg. The heat-hardened shell will hatch into a deathclaw bred for survival in the most hostile environments on the planet.</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <texPath>Things/Items/Animal_Products/Eggs/Deathclaw/FCP_Temperate_Deathclaw_Egg</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(180, 155, 110)</color>
+            <drawSize>1.2</drawSize>
+        </graphicData>
+        <stackLimit>10</stackLimit>
+        <statBases>
+            <MarketValue>280.0</MarketValue>
+            <Nutrition>2.5</Nutrition>
+            <FoodPoisonChanceFixedHuman>0.25</FoodPoisonChanceFixedHuman>
+        </statBases>
+        <comps>
+            <li Class="FCP.Core.CompProperties_HatcherCustom">
+                <hatcherDaystoHatch>28</hatcherDaystoHatch>
+                <hatcherPawn>FCP_Animal_Badlands_Deathclaw</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+
     <!--___ Rad Raven ___-->
 
     <!-- Unfertilized -->

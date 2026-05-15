@@ -78,7 +78,7 @@
             <gestationPeriodDays>24</gestationPeriodDays>
             <nameOnTameChance>1</nameOnTameChance>
             <trainability>Intermediate</trainability>
-            <soundEating>Herbivore_Eat</soundEating>
+            <soundEating>FCP_Sound_Bighorner_Eating</soundEating>
             <wildBiomes>
                 <AridShrubland>0.6</AridShrubland>
                 <Desert>0.5</Desert>
@@ -106,10 +106,10 @@
                 <li>
                     <def>AnimalAdult</def>
                     <minAge>0.8</minAge>
-                    <soundWounded>Pawn_Muffalo_Wounded</soundWounded>
-                    <soundDeath>Pawn_Muffalo_Death</soundDeath>
-                    <soundCall>Pawn_Muffalo_Call</soundCall>
-                    <soundAngry>Pawn_Muffalo_Angry</soundAngry>
+                    <soundWounded>FCP_Sound_Bighorner_Angry</soundWounded>
+                    <soundDeath>FCP_Sound_Bighorner_Death</soundDeath>
+                    <soundCall>FCP_Sound_Bighorner_Call</soundCall>
+                    <soundAngry>FCP_Sound_Bighorner_Angry</soundAngry>
                 </li>
             </lifeStageAges>
             <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>

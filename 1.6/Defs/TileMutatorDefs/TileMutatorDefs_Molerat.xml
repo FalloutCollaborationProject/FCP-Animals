@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Tile Mutators __________-->
+
+    <!-- Mole Rat Infestation -->
+
+    <TileMutatorDef MayRequire="Ludeon.RimWorld.Odyssey">
+        <defName>FCP_MoleratInfestation</defName>
+        <label>mole rat infestation</label>
+        <description>This area is riddled with mole rat burrows. The tunneling rodents are numerous here and will fiercely defend their territory.</description>
+        <workerClass>TileMutatorWorker_InsectMegahive</workerClass>
+        <minHilliness>LargeHills</minHilliness>
+        <requiresFactionOfDef>FCP_Faction_Molerat</requiresFactionOfDef>
+    </TileMutatorDef>
+
+</Defs>

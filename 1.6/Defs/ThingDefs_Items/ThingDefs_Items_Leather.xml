@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ FCP Leathers __________-->
+
+    <!-- Deathclaw Hide -->
+
+    <ThingDef ParentName="LeatherBase">
+        <defName>FCP_Leather_Deathclaw_Hide</defName>
+        <label>deathclaw hide</label>
+        <description>The thick, hardened scales of a deathclaw, carefully tanned and treated. Extraordinarily durable and resistant to slashing attacks, it is considered the finest natural armor material in the wasteland. The scales offer excellent protection against heat but poor insulation against cold.</description>
+        <graphicData>
+            <texPath>Things/Items/Leathers/Deathclaw_Hides</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(72, 78, 62)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>22</MarketValue>
+            <Mass>0.04</Mass>
+            <MaxHitPoints>80</MaxHitPoints>
+            <Flammability>0.7</Flammability>
+            <StuffPower_Armor_Sharp>1.45</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.55</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>2.5</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>6</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>28</StuffPower_Insulation_Heat>
+        </statBases>
+        <stuffProps>
+            <categories>
+                <li>Leathery</li>
+            </categories>
+            <color>(72, 78, 62)</color>
+            <commonality>0.04</commonality>
+            <statFactors>
+                <MaxHitPoints>1.7</MaxHitPoints>
+                <WorkToMake>1.8</WorkToMake>
+            </statFactors>
+            <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+        </stuffProps>
+    </ThingDef>
+
+</Defs>
