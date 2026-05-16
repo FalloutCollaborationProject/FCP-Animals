@@ -438,10 +438,10 @@
                 <li>
                     <def>AnimalAdult</def>
                     <minAge>0.75</minAge>
-                    <soundWounded>Pawn_BigInsect_Pain</soundWounded>
-                    <soundDeath>Pawn_BigInsect_Death</soundDeath>
-                    <soundCall>Pawn_BigInsect_Call</soundCall>
-                    <soundAngry>Pawn_BigInsect_Angry</soundAngry>
+                    <soundWounded>FCP_Sound_GiantMantis_Angry</soundWounded>
+                    <soundDeath>FCP_Sound_GiantMantis_Death</soundDeath>
+                    <soundCall>FCP_Sound_GiantMantis_Call</soundCall>
+                    <soundAngry>FCP_Sound_GiantMantis_Angry</soundAngry>
                 </li>
             </lifeStageAges>
             <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>

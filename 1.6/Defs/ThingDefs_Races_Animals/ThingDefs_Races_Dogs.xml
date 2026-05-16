@@ -298,7 +298,7 @@
             <trainability>Advanced</trainability>
             <specificMeatDef>FCP_Meat_Prime_Varmint</specificMeatDef>
             <nuzzleMtbHours>12</nuzzleMtbHours>
-            <soundEating>PredatorSmall_Eat</soundEating>
+            <soundEating>FCP_Sound_Dog_Eating</soundEating>
             <wildBiomes>
                 <TemperateForest>0.9</TemperateForest>
                 <AridShrubland>0.2</AridShrubland>
@@ -328,10 +328,10 @@
                 <li>
                     <def>AnimalAdult</def>
                     <minAge>0.5</minAge>
-                    <soundWounded>FCP_Sound_Animal_Vicious_Dog_Injured</soundWounded>
-                    <soundDeath>FCP_Sound_Animal_Vicious_Dog_Death</soundDeath>
-                    <soundCall>FCP_Sound_Animal_Vicious_Dog_Bark</soundCall>
-                    <soundAngry>FCP_Sound_Animal_Vicious_Dog_Growl</soundAngry>
+                    <soundWounded>FCP_Sound_Dog_Injured</soundWounded>
+                    <soundDeath>FCP_Sound_Dog_Death</soundDeath>
+                    <soundCall>FCP_Sound_Dog_Call</soundCall>
+                    <soundAngry>FCP_Sound_Dog_Angry</soundAngry>
                 </li>
             </lifeStageAges>
             <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
@@ -537,10 +537,10 @@
                 <li>
                     <def>AnimalAdult</def>
                     <minAge>0.35</minAge>
-                    <soundWounded>Pawn_Warg_Wounded</soundWounded>
-                    <soundDeath>Pawn_Warg_Death</soundDeath>
-                    <soundCall>Pawn_Warg_Call</soundCall>
-                    <soundAngry>Pawn_Warg_Angry</soundAngry>
+                    <soundWounded>FCP_Sound_Nightstalker_Attack</soundWounded>
+                    <soundDeath>FCP_Sound_Nightstalker_Angry</soundDeath>
+                    <soundCall>FCP_Sound_Nightstalker_Call</soundCall>
+                    <soundAngry>FCP_Sound_Nightstalker_Angry</soundAngry>
                 </li>
             </lifeStageAges>
             <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
