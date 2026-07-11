@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Cyberdog Conversion __________-->
+
+    <HediffDef>
+        <defName>FCP_Hediff_CyberdogConversion</defName>
+        <label>cyberdog chassis</label>
+        <description>This dog's body has been rebuilt around a salvaged pre-War cyberdog chassis. Plated joints and a reinforced frame make it hardier and harder to put down in a fight, but the added weight costs it some of the speed and agility it had as flesh and blood. The dog underneath is unchanged - it still thinks and acts the same as it always has.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <isBad>false</isBad>
+        <tendable>false</tendable>
+        <initialSeverity>1</initialSeverity>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+                    <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+                    <PainShockThreshold>0.15</PainShockThreshold>
+                    <MoveSpeed>-0.4</MoveSpeed>
+                    <MeleeDodgeChance>-0.08</MeleeDodgeChance>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps>
+            <li Class="FCP.Core.Hediffs.HediffCompProperties_BodyGraphicOverride">
+                <texPath>Animals/Cyberdog/FCP_Cyberdog</texPath>
+                <drawSize>1.6</drawSize>
+            </li>
+        </comps>
+    </HediffDef>
+
+</Defs>

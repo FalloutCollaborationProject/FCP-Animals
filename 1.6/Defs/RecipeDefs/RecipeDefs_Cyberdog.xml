@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Cyberdog Conversion Surgery __________-->
+
+    <RecipeDef ParentName="SurgeryFlesh">
+        <defName>FCP_Surgery_CyberdogConversion</defName>
+        <label>install cyberdog chassis</label>
+        <description>Rebuild the dog's body around a salvaged cyberdog chassis, permanently giving it the look of a pre-War cyberdog. The dog itself - its bond, training, and temperament - is untouched.</description>
+        <workerClass>Recipe_AddHediff</workerClass>
+        <jobString>installing cyberdog chassis on TargetA.</jobString>
+        <workAmount>1500</workAmount>
+        <hideBodyPartNames>true</hideBodyPartNames>
+        <targetsBodyPart>false</targetsBodyPart>
+        <addsHediff>FCP_Hediff_CyberdogConversion</addsHediff>
+        <researchPrerequisite>FCP_Research_Cyberdog_Conversion</researchPrerequisite>
+        <skillRequirements>
+            <Medicine>6</Medicine>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Plasteel</li>
+                <li>ComponentIndustrial</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+    </RecipeDef>
+
+</Defs>

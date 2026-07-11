@@ -145,7 +145,7 @@
 
     <ThingDef ParentName="FCP_Animal_Vicious_Dog_Base">
         <defName>FCP_Animal_Vicious_Guard_Dog</defName>
-        <label>Vicious Dog</label>
+        <label>Guard Dog</label>
         <description>Vicious dogs are a nearly hairless and apparently, partially ghoulified species of wasteland canine. Ruthless survivors of the wastes, these starving, irradiated mutts will attack anything that moves. Some dogs have been domesticated, even charged with guarding its owner and all their property this animal will do so to the best of its ability.</description>
         <race>
             <petness>1</petness>
@@ -171,6 +171,9 @@
             <min>1</min>
             <max>5</max>
         </wildGroupSize>
+        <abilities>
+            <li>FCP_Ability_Canine_Takedown</li>
+        </abilities>
         <lifeStages>
             <li>
                 <label>puppy</label>
@@ -371,6 +374,29 @@
         </tradeTags>
     </ThingDef>
 
+    <!--___ Mojave Mutt ___-->
+
+    <!-- Mojave Mutt -->
+
+    <ThingDef ParentName="FCP_Animal_German_Shepherd_Dog_Base">
+        <defName>FCP_Animal_Mojave_Mutt</defName>
+        <label>Mojave Mutt</label>
+        <description>A common mongrel breed found throughout the Mojave, just as likely to be curled up in a settlement's yard as trotting along an empty highway. Loyal and quick to bond with people, these dogs get by on scraps, instinct, and whatever protection they can talk their owner into.</description>
+        <race>
+            <wildBiomes>
+                <Desert>0.6</Desert>
+                <AridShrubland>0.5</AridShrubland>
+                <ExtremeDesert>0.2</ExtremeDesert>
+            </wildBiomes>
+        </race>
+        <tradeTags>
+            <li>FCP_Animal_Mojave_Mutt</li>
+        </tradeTags>
+        <recipes>
+            <li>FCP_Surgery_CyberdogConversion</li>
+        </recipes>
+    </ThingDef>
+
     <!--__ PawnKinds __-->
 
     <!-- German Shepherd Dog -->
@@ -381,6 +407,9 @@
         <race>FCP_Animal_German_Shepherd_Dog</race>
         <combatPower>48</combatPower>
         <ecoSystemWeight>1</ecoSystemWeight>
+        <abilities>
+            <li>FCP_Ability_Canine_Takedown</li>
+        </abilities>
         <lifeStages>
             <li>
                 <label>puppy</label>
@@ -431,6 +460,61 @@
         <defName>FCP_Animal_Minutemen_Guard_Dog</defName>
         <label>Minutemen Guard Dog</label>
         <race>FCP_Animal_Minutemen_Guard_Dog</race>
+    </PawnKindDef>
+
+    <!-- Mojave Mutt -->
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>FCP_Animal_Mojave_Mutt</defName>
+        <label>Mojave Mutt</label>
+        <race>FCP_Animal_Mojave_Mutt</race>
+        <combatPower>48</combatPower>
+        <ecoSystemWeight>1</ecoSystemWeight>
+        <abilities>
+            <li>FCP_Ability_Canine_Takedown</li>
+        </abilities>
+        <lifeStages>
+            <li>
+                <label>puppy</label>
+                <labelPlural>puppies</labelPlural>
+                <bodyGraphicData>
+                    <texPath>Animals/Mojave_Mutt/FCP_Mojave_Mutt</texPath>
+                    <drawSize>0.95</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Vicious_Dog/FCP_Dessicated_Vicious_Dog</texPath>
+                    <drawSize>0.95</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Mojave_Mutt/FCP_Mojave_Mutt</texPath>
+                    <drawSize>1.35</drawSize>
+                    <shadowData>
+                        <volume>(0.25, 0.3, 0.25)</volume>
+                        <offset>(0,0,-0.15)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Vicious_Dog/FCP_Dessicated_Vicious_Dog</texPath>
+                    <drawSize>1.35</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Mojave_Mutt/FCP_Mojave_Mutt</texPath>
+                    <drawSize>1.6</drawSize>
+                    <shadowData>
+                        <volume>(0.3, 0.4, 0.3)</volume>
+                        <offset>(0,0,-0.15)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Vicious_Dog/FCP_Dessicated_Vicious_Dog</texPath>
+                    <drawSize>1.6</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
     </PawnKindDef>
 
     <!--___ Nightstalker ___-->
