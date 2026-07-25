@@ -397,6 +397,85 @@
         </recipes>
     </ThingDef>
 
+    <!--___ Wild Dog ___-->
+
+    <!-- Wild Dog -->
+
+    <ThingDef ParentName="FCP_Animal_German_Shepherd_Dog_Base">
+        <defName>FCP_Animal_Wild_Dog</defName>
+        <label>Wild Dog</label>
+        <description>A scruffy, unkempt mongrel that scrapes by on the outskirts of settlements, more scavenger than predator. Despite its rough appearance, a wild dog that's taken a liking to someone will follow them to the ends of the wasteland.</description>
+        <race>
+            <wildBiomes>
+                <TemperateForest>0.6</TemperateForest>
+                <AridShrubland>0.6</AridShrubland>
+                <Desert>0.3</Desert>
+                <ExtremeDesert>0.1</ExtremeDesert>
+                <TemperateSwamp>0.4</TemperateSwamp>
+            </wildBiomes>
+        </race>
+        <tradeTags>
+            <li>FCP_Animal_Dog</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!--__ PawnKinds __-->
+
+    <!-- Wild Dog -->
+
+    <PawnKindDef Name="FCP_Animal_Wild_Dog" ParentName="AnimalKindBase">
+        <defName>FCP_Animal_Wild_Dog</defName>
+        <label>Wild Dog</label>
+        <race>FCP_Animal_Wild_Dog</race>
+        <combatPower>48</combatPower>
+        <ecoSystemWeight>1</ecoSystemWeight>
+        <abilities>
+            <li>FCP_Ability_Canine_Takedown</li>
+        </abilities>
+        <lifeStages>
+            <li>
+                <label>puppy</label>
+                <labelPlural>puppies</labelPlural>
+                <bodyGraphicData>
+                    <texPath>Animals/Wild_Dog/FCP_MegatonMutt</texPath>
+                    <drawSize>0.95</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Vicious_Dog/FCP_Dessicated_Vicious_Dog</texPath>
+                    <drawSize>0.95</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Wild_Dog/FCP_MegatonMutt</texPath>
+                    <drawSize>1.35</drawSize>
+                    <shadowData>
+                        <volume>(0.25, 0.3, 0.25)</volume>
+                        <offset>(0,0,-0.15)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Vicious_Dog/FCP_Dessicated_Vicious_Dog</texPath>
+                    <drawSize>1.35</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/Wild_Dog/FCP_MegatonMutt</texPath>
+                    <drawSize>1.6</drawSize>
+                    <shadowData>
+                        <volume>(0.3, 0.4, 0.3)</volume>
+                        <offset>(0,0,-0.15)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Animals/Vicious_Dog/FCP_Dessicated_Vicious_Dog</texPath>
+                    <drawSize>1.6</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
     <!--__ PawnKinds __-->
 
     <!-- German Shepherd Dog -->
@@ -464,7 +543,7 @@
 
     <!-- Mojave Mutt -->
 
-    <PawnKindDef ParentName="AnimalKindBase">
+    <PawnKindDef Name="FCP_Animal_Mojave_Mutt" ParentName="AnimalKindBase">
         <defName>FCP_Animal_Mojave_Mutt</defName>
         <label>Mojave Mutt</label>
         <race>FCP_Animal_Mojave_Mutt</race>
