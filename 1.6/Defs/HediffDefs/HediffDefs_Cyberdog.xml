@@ -3,8 +3,7 @@
 
     <!--__________ Cyberdog Conversion __________-->
 
-    <HediffDef>
-        <defName>FCP_Hediff_CyberdogConversion</defName>
+    <HediffDef Name="FCP_Hediff_CyberdogConversion_Base" Abstract="True">
         <label>cyberdog chassis</label>
         <description>This dog's body has been rebuilt around a salvaged pre-War cyberdog chassis. Plated joints and a reinforced frame make it hardier and harder to put down in a fight, but the added weight costs it some of the speed and agility it had as flesh and blood. The dog underneath is unchanged - it still thinks and acts the same as it always has.</description>
         <hediffClass>HediffWithComps</hediffClass>
@@ -22,9 +21,43 @@
                 </statOffsets>
             </li>
         </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="FCP_Hediff_CyberdogConversion_Base">
+        <defName>FCP_Hediff_CyberdogConversion_ViciousDog</defName>
         <comps>
             <li Class="FCP.Core.Hediffs.HediffCompProperties_BodyGraphicOverride">
-                <texPath>Animals/Cyberdog/FCP_Cyberdog</texPath>
+                <texPath>Animals/Vicious_Dog/Cyberdog/FCP_Vicious_Dog</texPath>
+                <drawSize>1.6</drawSize>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="FCP_Hediff_CyberdogConversion_Base">
+        <defName>FCP_Hediff_CyberdogConversion_GermanShepherdDog</defName>
+        <comps>
+            <li Class="FCP.Core.Hediffs.HediffCompProperties_BodyGraphicOverride">
+                <texPath>Animals/German_Shepherd_Dog/Cyberdog/FCP_German_Shepherd_Dog</texPath>
+                <drawSize>1.6</drawSize>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="FCP_Hediff_CyberdogConversion_Base">
+        <defName>FCP_Hediff_CyberdogConversion_MojaveMutt</defName>
+        <comps>
+            <li Class="FCP.Core.Hediffs.HediffCompProperties_BodyGraphicOverride">
+                <texPath>Animals/Mojave_Mutt/Cyberdog/FCP_Mojave_Mutt</texPath>
+                <drawSize>1.6</drawSize>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="FCP_Hediff_CyberdogConversion_Base">
+        <defName>FCP_Hediff_CyberdogConversion_WildDog</defName>
+        <comps>
+            <li Class="FCP.Core.Hediffs.HediffCompProperties_BodyGraphicOverride">
+                <texPath>Animals/Wild_Dog/Cyberdog/FCP_MegatonMutt</texPath>
                 <drawSize>1.6</drawSize>
             </li>
         </comps>

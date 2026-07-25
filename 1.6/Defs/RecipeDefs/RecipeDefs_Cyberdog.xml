@@ -3,8 +3,7 @@
 
     <!--__________ Cyberdog Conversion Surgery __________-->
 
-    <RecipeDef ParentName="SurgeryFlesh">
-        <defName>FCP_Surgery_CyberdogConversion</defName>
+    <RecipeDef Name="FCP_Surgery_CyberdogConversion_Base" ParentName="SurgeryFlesh" Abstract="True">
         <label>install cyberdog chassis</label>
         <description>Rebuild the dog's body around a salvaged cyberdog chassis, permanently giving it the look of a pre-War cyberdog. The dog itself - its bond, training, and temperament - is untouched.</description>
         <workerClass>Recipe_AddHediff</workerClass>
@@ -12,7 +11,6 @@
         <workAmount>1500</workAmount>
         <hideBodyPartNames>true</hideBodyPartNames>
         <targetsBodyPart>false</targetsBodyPart>
-        <addsHediff>FCP_Hediff_CyberdogConversion</addsHediff>
         <researchPrerequisite>FCP_Research_Cyberdog_Conversion</researchPrerequisite>
         <skillRequirements>
             <Medicine>6</Medicine>
@@ -41,6 +39,26 @@
                 <li>ComponentIndustrial</li>
             </thingDefs>
         </fixedIngredientFilter>
+    </RecipeDef>
+
+    <RecipeDef ParentName="FCP_Surgery_CyberdogConversion_Base">
+        <defName>FCP_Surgery_CyberdogConversion_ViciousDog</defName>
+        <addsHediff>FCP_Hediff_CyberdogConversion_ViciousDog</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="FCP_Surgery_CyberdogConversion_Base">
+        <defName>FCP_Surgery_CyberdogConversion_GermanShepherdDog</defName>
+        <addsHediff>FCP_Hediff_CyberdogConversion_GermanShepherdDog</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="FCP_Surgery_CyberdogConversion_Base">
+        <defName>FCP_Surgery_CyberdogConversion_MojaveMutt</defName>
+        <addsHediff>FCP_Hediff_CyberdogConversion_MojaveMutt</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="FCP_Surgery_CyberdogConversion_Base">
+        <defName>FCP_Surgery_CyberdogConversion_WildDog</defName>
+        <addsHediff>FCP_Hediff_CyberdogConversion_WildDog</addsHediff>
     </RecipeDef>
 
 </Defs>

@@ -139,6 +139,9 @@
         <tradeTags>
             <li>FCP_Animal_Dog</li>
         </tradeTags>
+        <recipes>
+            <li>FCP_Surgery_CyberdogConversion_ViciousDog</li>
+        </recipes>
     </ThingDef>
 
     <!-- Guard Dog -->
@@ -154,6 +157,9 @@
         <tradeTags>
             <li>FCP_Animal_Guard_Dog</li>
         </tradeTags>
+        <recipes>
+            <li>FCP_Surgery_CyberdogConversion_ViciousDog</li>
+        </recipes>
     </ThingDef>
 
     <!--__ PawnKinds __-->
@@ -358,6 +364,9 @@
         <tradeTags>
             <li>FCP_Animal_Dog</li>
         </tradeTags>
+        <recipes>
+            <li>FCP_Surgery_CyberdogConversion_GermanShepherdDog</li>
+        </recipes>
     </ThingDef>
 
     <!-- Minutemen Guard Dog -->
@@ -372,6 +381,9 @@
         <tradeTags>
             <li>FCP_Animal_Minutemen_Guard_Dog</li>
         </tradeTags>
+        <recipes>
+            <li>FCP_Surgery_CyberdogConversion_GermanShepherdDog</li>
+        </recipes>
     </ThingDef>
 
     <!--___ Mojave Mutt ___-->
@@ -393,7 +405,7 @@
             <li>FCP_Animal_Mojave_Mutt</li>
         </tradeTags>
         <recipes>
-            <li>FCP_Surgery_CyberdogConversion</li>
+            <li>FCP_Surgery_CyberdogConversion_MojaveMutt</li>
         </recipes>
     </ThingDef>
 
@@ -417,6 +429,9 @@
         <tradeTags>
             <li>FCP_Animal_Dog</li>
         </tradeTags>
+        <recipes>
+            <li>FCP_Surgery_CyberdogConversion_WildDog</li>
+        </recipes>
     </ThingDef>
 
     <!--__ PawnKinds __-->
