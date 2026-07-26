@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Factions __________-->
+
+    <!-- Lurkers -->
+
+    <FactionDef ParentName="FactionBase">
+        <defName>FCP_Faction_Lurker</defName>
+        <label>lurker colony</label>
+        <description>Mutated crustaceans that nest in clutches of eggs along coastlines, riverbanks, and beaches. They breed rapidly and swarm in large numbers when their nesting grounds are disturbed. Territorial and aggressive, they attack anything that comes near their eggs.</description>
+        <pawnSingular>lurker</pawnSingular>
+        <pawnsPlural>lurkers</pawnsPlural>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <fixedName>Lurker Colony</fixedName>
+        <factionIconPath>Animals/Mirelurk/Mirelurk/FCP_Mirelurk</factionIconPath>
+        <colorSpectrum>
+            <li>(0.40, 0.50, 0.45)</li>
+            <li>(0.50, 0.45, 0.35)</li>
+            <li>(0.35, 0.45, 0.50)</li>
+        </colorSpectrum>
+        <raidCommonalityFromPointsCurve>
+            <points>
+                <li>(0, 0)</li>
+            </points>
+        </raidCommonalityFromPointsCurve>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(100,100)</li>
+                <li>(10000,10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <pawnGroupMakers>
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>1</commonality>
+                <options>
+                    <FCP_Animal_Mirelurk>10</FCP_Animal_Mirelurk>
+                    <FCP_Animal_Beachlurk>10</FCP_Animal_Beachlurk>
+                    <FCP_Animal_Riverlurk>10</FCP_Animal_Riverlurk>
+                </options>
+            </li>
+        </pawnGroupMakers>
+        <humanlikeFaction>false</humanlikeFaction>
+        <hidden>true</hidden>
+        <autoFlee>false</autoFlee>
+        <canUseAvoidGrid>false</canUseAvoidGrid>
+        <techLevel>Animal</techLevel>
+        <animalsFleeDanger>false</animalsFleeDanger>
+        <permanentEnemyToEveryoneExcept>
+            <li MayRequire="Ludeon.RimWorld.Anomaly">Entities</li>
+        </permanentEnemyToEveryoneExcept>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+        <allowedArrivalTemperatureRange>-20~50</allowedArrivalTemperatureRange>
+        <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+        <configurationListOrderPriority>999</configurationListOrderPriority>
+        <modExtensions>
+            <li Class="FCP.Factions.FactionExtension_FlavorOverride">
+                <newLabel>Lurker Nesting Grounds</newLabel>
+            </li>
+        </modExtensions>
+    </FactionDef>
+
+</Defs>

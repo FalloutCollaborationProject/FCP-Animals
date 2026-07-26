@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Abilities __________-->
+
+    <!-- Burrow Ambush -->
+
+    <AbilityDef>
+        <defName>FCP_Ability_BurrowAmbush</defName>
+        <label>burrow ambush</label>
+        <description>Burrow underground and burst out next to a target, landing a surprise attack before it can react.</description>
+        <cooldownTicksRange>2500</cooldownTicksRange>
+        <jobDef>CastJump</jobDef>
+        <ai_IsOffensive>true</ai_IsOffensive>
+        <aiCanUse>true</aiCanUse>
+        <verbProperties>
+            <verbClass>FCP.Core.Verb_CastAbilityBurrowAmbush</verbClass>
+            <label>burrow ambush</label>
+            <range>9.9</range>
+            <minRange>3.9</minRange>
+            <requireLineOfSight>true</requireLineOfSight>
+            <warmupTime>0.15</warmupTime>
+            <soundLanding>FCP_Sound_MoleRat_Angry</soundLanding>
+            <targetParams>
+                <canTargetBuildings>false</canTargetBuildings>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="FCP.Core.CompProperties_BurrowAmbush">
+                <maxBodySize>3</maxBodySize>
+            </li>
+        </comps>
+    </AbilityDef>
+
+</Defs>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Pawn Flyers __________-->
+
+    <!-- Burrow Ambush (used by mole rats and other burrowing creatures to close distance) -->
+
+    <ThingDef ParentName="PawnFlyerBase">
+        <defName>FCP_PawnFlyer_BurrowAmbush</defName>
+        <pawnFlyer>
+            <flightDurationMin>0.4</flightDurationMin>
+            <flightSpeed>18</flightSpeed>
+            <heightFactor>0.15</heightFactor>
+        </pawnFlyer>
+    </ThingDef>
+
+</Defs>

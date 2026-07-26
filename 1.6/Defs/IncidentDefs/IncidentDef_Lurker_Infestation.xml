@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Mirelurk Infestation (any coast) -->
+
+    <IncidentDef>
+        <defName>FCP_MirelurkInfestation</defName>
+        <label>mirelurk infestation</label>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>FCP.Core.IncidentWorker_GautletSpawner</workerClass>
+        <letterLabel>Mirelurks nesting</letterLabel>
+        <letterText>A clutch of mirelurk eggs has been laid along the coast near your colony! They will hatch soon and establish more nesting grounds.\n\nThe clutches will hatch more mirelurks and spread along the shoreline.\n\nIf you don't want the mirelurks to overrun the coast, destroy the egg clutches. But beware - the creatures will defend their eggs.</letterText>
+        <letterDef>ThreatBig</letterDef>
+        <baseChance>2.0</baseChance>
+        <minRefireDays>20</minRefireDays>
+        <category>ThreatBig</category>
+        <pointsScaleable>true</pointsScaleable>
+        <minThreatPoints>400</minThreatPoints>
+        <modExtensions>
+            <li Class="FCP.Core.IncidentExtension_GautletSpawnCondition">
+                <allowedTerrains>
+                    <li>Sand</li>
+                    <li>WaterOceanShallow</li>
+                    <li>WaterOceanDeep</li>
+                </allowedTerrains>
+                <disallowedTerrains />
+                <isAllowRoofed>false</isAllowRoofed>
+                <isAllowFogged>false</isAllowFogged>
+                <radius>6</radius>
+                <factionDef>FCP_Faction_Lurker</factionDef>
+                <thingDef>FCP_Infestation_EggClutch_Mirelurk</thingDef>
+                <spawnerPoint>0</spawnerPoint>
+                <count>3</count>
+            </li>
+        </modExtensions>
+    </IncidentDef>
+
+    <!-- Beachlurk Infestation (beaches only) -->
+
+    <IncidentDef>
+        <defName>FCP_BeachlurkInfestation</defName>
+        <label>beachlurk infestation</label>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>FCP.Core.IncidentWorker_GautletSpawner</workerClass>
+        <letterLabel>Beachlurks nesting</letterLabel>
+        <letterText>A clutch of beachlurk eggs has been buried in the sand near your colony! They will hatch soon and establish more nesting grounds.\n\nThe clutches will hatch more beachlurks and spread along the beach.\n\nIf you don't want the beachlurks to overrun the area, destroy the egg clutches. But beware - the creatures will defend their eggs.</letterText>
+        <letterDef>ThreatBig</letterDef>
+        <baseChance>1.8</baseChance>
+        <minRefireDays>20</minRefireDays>
+        <category>ThreatBig</category>
+        <pointsScaleable>true</pointsScaleable>
+        <minThreatPoints>400</minThreatPoints>
+        <modExtensions>
+            <li Class="FCP.Core.IncidentExtension_GautletSpawnCondition">
+                <allowedTerrains>
+                    <li>Sand</li>
+                </allowedTerrains>
+                <disallowedTerrains />
+                <isAllowRoofed>false</isAllowRoofed>
+                <isAllowFogged>false</isAllowFogged>
+                <radius>6</radius>
+                <factionDef>FCP_Faction_Lurker</factionDef>
+                <thingDef>FCP_Infestation_EggClutch_Beachlurk</thingDef>
+                <spawnerPoint>0</spawnerPoint>
+                <count>3</count>
+            </li>
+        </modExtensions>
+    </IncidentDef>
+
+    <!-- Riverlurk Infestation (rivers only) -->
+
+    <IncidentDef>
+        <defName>FCP_RiverlurkInfestation</defName>
+        <label>riverlurk infestation</label>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>FCP.Core.IncidentWorker_GautletSpawner</workerClass>
+        <letterLabel>Riverlurks nesting</letterLabel>
+        <letterText>A clutch of riverlurk eggs has been laid along the riverbank near your colony! They will hatch soon and establish more nesting grounds.\n\nThe clutches will hatch more riverlurks and spread along the waterway.\n\nIf you don't want the riverlurks to overrun the river, destroy the egg clutches. But beware - the creatures will defend their eggs.</letterText>
+        <letterDef>ThreatBig</letterDef>
+        <baseChance>1.8</baseChance>
+        <minRefireDays>20</minRefireDays>
+        <category>ThreatBig</category>
+        <pointsScaleable>true</pointsScaleable>
+        <minThreatPoints>400</minThreatPoints>
+        <modExtensions>
+            <li Class="FCP.Core.IncidentExtension_GautletSpawnCondition">
+                <allowedTerrains>
+                    <li>WaterMovingShallow</li>
+                </allowedTerrains>
+                <disallowedTerrains />
+                <isAllowRoofed>false</isAllowRoofed>
+                <isAllowFogged>false</isAllowFogged>
+                <radius>6</radius>
+                <factionDef>FCP_Faction_Lurker</factionDef>
+                <thingDef>FCP_Infestation_EggClutch_Riverlurk</thingDef>
+                <spawnerPoint>0</spawnerPoint>
+                <count>3</count>
+            </li>
+        </modExtensions>
+    </IncidentDef>
+
+</Defs>

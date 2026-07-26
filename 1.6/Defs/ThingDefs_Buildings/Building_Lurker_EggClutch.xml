@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef Name="FCP_Infestation_EggClutchBase" ParentName="BuildingNaturalBase" Abstract="True">
+        <thingClass>Building</thingClass>
+        <graphicData>
+            <texPath>Things/Items/Animal_Products/Eggs/Mirelurk/FCP_Lurk_Egg</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(2.5,2.5)</drawSize>
+        </graphicData>
+        <uiIconScale>0.6</uiIconScale>
+        <altitudeLayer>Building</altitudeLayer>
+        <rotatable>false</rotatable>
+        <fillPercent>0.4</fillPercent>
+        <statBases>
+            <MaxHitPoints>180</MaxHitPoints>
+            <Flammability>0.3</Flammability>
+        </statBases>
+        <pathCost>42</pathCost>
+        <receivesSignals>true</receivesSignals>
+        <tickerType>Normal</tickerType>
+        <passability>PassThroughOnly</passability>
+        <size>(2,2)</size>
+        <building>
+            <claimable>false</claimable>
+            <deconstructible>false</deconstructible>
+        </building>
+        <killedLeavings>
+            <FCP_Meat_Crab>10</FCP_Meat_Crab>
+        </killedLeavings>
+        <comps>
+            <li Class="CompProperties_CanBeDormant">
+                <startsDormant>false</startsDormant>
+                <canWakeUpFogged>false</canWakeUpFogged>
+            </li>
+            <li Class="CompProperties_WakeUpDormant" />
+            <li Class="CompProperties_SelfhealHitpoints">
+                <ticksPerHeal>6000</ticksPerHeal>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- Mirelurk Egg Clutch (any coast) -->
+
+    <ThingDef ParentName="FCP_Infestation_EggClutchBase">
+        <defName>FCP_Infestation_EggClutch_Mirelurk</defName>
+        <label>mirelurk egg clutch</label>
+        <description>A clutch of mirelurk eggs nestled along the coastline. If left alone, it will hatch more mirelurks and spread more clutches throughout the area. The creatures will defend their nesting grounds aggressively.</description>
+        <comps>
+            <li Class="FCP.Core.CompProperties_GauntletSpawner">
+                <possibleKindDefToSpawn>
+                    <li>FCP_Animal_Mirelurk</li>
+                </possibleKindDefToSpawn>
+                <maxCount>6</maxCount>
+                <spawnPerTrigger>2</spawnPerTrigger>
+                <interval>4000</interval>
+                <fuelUsed>1</fuelUsed>
+                <uiIcon>Animals/Mirelurk/Mirelurk/FCP_Mirelurk</uiIcon>
+                <attackIcon>Animals/Mirelurk/Mirelurk/FCP_Mirelurk</attackIcon>
+                <gotoIcon>Animals/Mirelurk/Mirelurk/FCP_Mirelurk</gotoIcon>
+                <groupMarkingRadius>10</groupMarkingRadius>
+                <autoHuntingInterval>250</autoHuntingInterval>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- Beachlurk Egg Clutch (beaches only) -->
+
+    <ThingDef ParentName="FCP_Infestation_EggClutchBase">
+        <defName>FCP_Infestation_EggClutch_Beachlurk</defName>
+        <label>beachlurk egg clutch</label>
+        <description>A clutch of beachlurk eggs buried in the sand. If left alone, it will hatch more beachlurks and spread more clutches throughout the area. The creatures will defend their nesting grounds aggressively.</description>
+        <comps>
+            <li Class="FCP.Core.CompProperties_GauntletSpawner">
+                <possibleKindDefToSpawn>
+                    <li>FCP_Animal_Beachlurk</li>
+                </possibleKindDefToSpawn>
+                <maxCount>6</maxCount>
+                <spawnPerTrigger>2</spawnPerTrigger>
+                <interval>4000</interval>
+                <fuelUsed>1</fuelUsed>
+                <uiIcon>Animals/Mirelurk/Beachlurk/FCP_Beachlurk</uiIcon>
+                <attackIcon>Animals/Mirelurk/Beachlurk/FCP_Beachlurk</attackIcon>
+                <gotoIcon>Animals/Mirelurk/Beachlurk/FCP_Beachlurk</gotoIcon>
+                <groupMarkingRadius>10</groupMarkingRadius>
+                <autoHuntingInterval>250</autoHuntingInterval>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- Riverlurk Egg Clutch (rivers only) -->
+
+    <ThingDef ParentName="FCP_Infestation_EggClutchBase">
+        <defName>FCP_Infestation_EggClutch_Riverlurk</defName>
+        <label>riverlurk egg clutch</label>
+        <description>A clutch of riverlurk eggs nestled along the riverbank. If left alone, it will hatch more riverlurks and spread more clutches throughout the area. The creatures will defend their nesting grounds aggressively.</description>
+        <comps>
+            <li Class="FCP.Core.CompProperties_GauntletSpawner">
+                <possibleKindDefToSpawn>
+                    <li>FCP_Animal_Riverlurk</li>
+                </possibleKindDefToSpawn>
+                <maxCount>6</maxCount>
+                <spawnPerTrigger>2</spawnPerTrigger>
+                <interval>4000</interval>
+                <fuelUsed>1</fuelUsed>
+                <uiIcon>Animals/Mirelurk/Riverlurk/FCP_Riverlurk</uiIcon>
+                <attackIcon>Animals/Mirelurk/Riverlurk/FCP_Riverlurk</attackIcon>
+                <gotoIcon>Animals/Mirelurk/Riverlurk/FCP_Riverlurk</gotoIcon>
+                <groupMarkingRadius>10</groupMarkingRadius>
+                <autoHuntingInterval>250</autoHuntingInterval>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>

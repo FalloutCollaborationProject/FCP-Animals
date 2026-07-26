@@ -126,6 +126,9 @@
             <min>3</min>
             <max>8</max>
         </wildGroupSize>
+        <abilities>
+            <li>FCP_Ability_BurrowAmbush</li>
+        </abilities>
         <lifeStages>
             <li>
                 <label>mole rat pup</label>

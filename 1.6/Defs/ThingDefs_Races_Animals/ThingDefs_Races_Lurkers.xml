@@ -55,15 +55,8 @@
                 <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
                 <chanceFactor>0.15</chanceFactor>
             </li>
-        </tools>        <comps>
-            <li Class="CompProperties_EggLayer">
-                <eggUnfertilizedDef>FCP_Egg_Beachlurk_Unfertilized</eggUnfertilizedDef>
-                <eggFertilizedDef>FCP_Egg_Beachlurk_Fertilized</eggFertilizedDef>
-                <eggFertilizationCountMax>3</eggFertilizationCountMax>
-                <eggLayIntervalDays>20</eggLayIntervalDays>
-                <eggCountRange>2~4</eggCountRange>
-            </li>
-        </comps>        <comps>
+        </tools>
+        <comps>
             <li Class="CompProperties_EggLayer">
                 <eggUnfertilizedDef>FCP_Egg_Mirelurk_Unfertilized</eggUnfertilizedDef>
                 <eggFertilizedDef>FCP_Egg_Mirelurk_Fertilized</eggFertilizedDef>
