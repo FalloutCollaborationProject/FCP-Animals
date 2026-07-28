@@ -13,7 +13,7 @@
         <pawnsPlural>lurkers</pawnsPlural>
         <requiredCountAtGameStart>1</requiredCountAtGameStart>
         <fixedName>Lurker Colony</fixedName>
-        <factionIconPath>Animals/Mirelurk/Mirelurk/FCP_Mirelurk</factionIconPath>
+        <factionIconPath>Animals/Mirelurk/Mirelurk/FCP_Mirelurk_east</factionIconPath>
         <colorSpectrum>
             <li>(0.40, 0.50, 0.45)</li>
             <li>(0.50, 0.45, 0.35)</li>
