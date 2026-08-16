@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Complex Threats __________-->
+
+    <!-- Sleeping Radroaches -->
+
+    <ComplexThreatDef ParentName="SleepingThreat">
+        <defName>FCP_SleepingRadroaches</defName>
+        <workerClass>FCP.Core.ComplexThreatWorker_SleepingRadroaches</workerClass>
+        <faction>Insect</faction>
+        <minPoints>100</minPoints>
+    </ComplexThreatDef>
+
+</Defs>

@@ -347,7 +347,7 @@
                     <drawSize>1</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Animals/Rad_Raven/FCP_Dessicated_Rad_Raven</texPath>
+                    <texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
                     <drawSize>1</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -357,7 +357,7 @@
                     <drawSize>1.3</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Animals/Rad_Raven/FCP_Dessicated_Rad_Raven</texPath>
+                    <texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
                     <drawSize>1.3</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -371,7 +371,7 @@
                     </shadowData>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Animals/Rad_Raven/FCP_Dessicated_Rad_Raven</texPath>
+                    <texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
                     <drawSize>1.4</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -557,7 +557,7 @@
                     <drawSize>1</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Animals/Radgull/FCP_Dessicated_Radgull</texPath>
+                    <texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
                     <drawSize>1</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -567,7 +567,7 @@
                     <drawSize>1.3</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Animals/Radgull/FCP_Dessicated_Radgull</texPath>
+                    <texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
                     <drawSize>1.3</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -581,7 +581,7 @@
                     </shadowData>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Animals/Radgull/FCP_Dessicated_Radgull</texPath>
+                    <texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
                     <drawSize>1.4</drawSize>
                 </dessicatedBodyGraphicData>
             </li>

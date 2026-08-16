@@ -7,7 +7,7 @@
             <texPath>Things/Items/Animal_Products/Eggs/Mirelurk/FCP_Lurk_Egg</texPath>
             <graphicClass>Graphic_Random</graphicClass>
             <shaderType>CutoutComplex</shaderType>
-            <drawSize>(2.5,2.5)</drawSize>
+            <drawSize>(2,2)</drawSize>
         </graphicData>
         <uiIconScale>0.6</uiIconScale>
         <altitudeLayer>Building</altitudeLayer>
@@ -56,9 +56,9 @@
                 <spawnPerTrigger>2</spawnPerTrigger>
                 <interval>4000</interval>
                 <fuelUsed>1</fuelUsed>
-                <uiIcon>Animals/Mirelurk/Mirelurk/FCP_Mirelurk</uiIcon>
-                <attackIcon>Animals/Mirelurk/Mirelurk/FCP_Mirelurk</attackIcon>
-                <gotoIcon>Animals/Mirelurk/Mirelurk/FCP_Mirelurk</gotoIcon>
+                <uiIcon>Animals/Mirelurk/Mirelurk/FCP_Mirelurk_south</uiIcon>
+                <attackIcon>Animals/Mirelurk/Mirelurk/FCP_Mirelurk_south</attackIcon>
+                <gotoIcon>Animals/Mirelurk/Mirelurk/FCP_Mirelurk_south</gotoIcon>
                 <groupMarkingRadius>10</groupMarkingRadius>
                 <autoHuntingInterval>250</autoHuntingInterval>
             </li>
@@ -80,9 +80,9 @@
                 <spawnPerTrigger>2</spawnPerTrigger>
                 <interval>4000</interval>
                 <fuelUsed>1</fuelUsed>
-                <uiIcon>Animals/Mirelurk/Beachlurk/FCP_Beachlurk</uiIcon>
-                <attackIcon>Animals/Mirelurk/Beachlurk/FCP_Beachlurk</attackIcon>
-                <gotoIcon>Animals/Mirelurk/Beachlurk/FCP_Beachlurk</gotoIcon>
+                <uiIcon>Animals/Mirelurk/Beachlurk/FCP_Beachlurk_south</uiIcon>
+                <attackIcon>Animals/Mirelurk/Beachlurk/FCP_Beachlurk_south</attackIcon>
+                <gotoIcon>Animals/Mirelurk/Beachlurk/FCP_Beachlurk_south</gotoIcon>
                 <groupMarkingRadius>10</groupMarkingRadius>
                 <autoHuntingInterval>250</autoHuntingInterval>
             </li>
@@ -104,9 +104,9 @@
                 <spawnPerTrigger>2</spawnPerTrigger>
                 <interval>4000</interval>
                 <fuelUsed>1</fuelUsed>
-                <uiIcon>Animals/Mirelurk/Riverlurk/FCP_Riverlurk</uiIcon>
-                <attackIcon>Animals/Mirelurk/Riverlurk/FCP_Riverlurk</attackIcon>
-                <gotoIcon>Animals/Mirelurk/Riverlurk/FCP_Riverlurk</gotoIcon>
+                <uiIcon>Animals/Mirelurk/Riverlurk/FCP_Riverlurk_south</uiIcon>
+                <attackIcon>Animals/Mirelurk/Riverlurk/FCP_Riverlurk_south</attackIcon>
+                <gotoIcon>Animals/Mirelurk/Riverlurk/FCP_Riverlurk_south</gotoIcon>
                 <groupMarkingRadius>10</groupMarkingRadius>
                 <autoHuntingInterval>250</autoHuntingInterval>
             </li>

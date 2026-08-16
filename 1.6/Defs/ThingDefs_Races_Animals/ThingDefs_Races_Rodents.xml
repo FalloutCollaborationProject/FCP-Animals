@@ -318,7 +318,7 @@
                     <shaderType>CutoutComplex</shaderType>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Animals/Rad_Rabbit/Dessicated_FCP_RadRabbit</texPath>
+                    <texPath>Things/Pawn/Animal/Hare/Dessicated_Hare</texPath>
                     <drawSize>0.5</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -333,7 +333,7 @@
                     </shadowData>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Animals/Rad_Rabbit/Dessicated_FCP_RadRabbit</texPath>
+                    <texPath>Things/Pawn/Animal/Hare/Dessicated_Hare</texPath>
                     <drawSize>0.75</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -348,7 +348,7 @@
                     </shadowData>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Animals/Rad_Rabbit/Dessicated_FCP_RadRabbit</texPath>
+                    <texPath>Things/Pawn/Animal/Hare/Dessicated_Hare</texPath>
                     <drawSize>1.0</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
