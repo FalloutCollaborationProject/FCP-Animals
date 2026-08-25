@@ -80,7 +80,7 @@
     <ThingDef ParentName="EggFertBase">
         <defName>FCP_Egg_Woodland_Deathclaw_Fertilized</defName>
         <label>Woodland Deathclaw Egg (fert.)</label>
-        <description>A fertilized woodland deathclaw egg. Most will hatch into a standard woodland deathclaw, but rarely something stranger emerges — an albino, a glowing mutant, or even an ancient elder.</description>
+        <description>A fertilized woodland deathclaw egg. Most will hatch into a standard woodland deathclaw, but rarely something stranger emerges: an albino, a glowing mutant, or even an ancient elder.</description>
         <possessionCount>1</possessionCount>
         <graphicData>
             <texPath>Things/Items/Animal_Products/Eggs/Deathclaw/FCP_Temperate_Deathclaw_Egg</texPath>

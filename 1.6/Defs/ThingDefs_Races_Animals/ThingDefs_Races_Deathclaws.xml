@@ -479,7 +479,7 @@
     <ThingDef ParentName="FCP_Animal_FO4_Deathclaw_Base">
         <defName>FCP_Animal_Glowing_Deathclaw</defName>
         <label>Glowing Deathclaw</label>
-        <description>A deathclaw saturated with radioactive material, causing it to emit a sickly bioluminescent glow. Exceptionally dangerous — its claws deliver a powerful toxic scratch when they catch a victim off-guard.</description>
+        <description>A deathclaw saturated with radioactive material, causing it to emit a sickly bioluminescent glow. Exceptionally dangerous, its claws deliver a powerful toxic scratch when they catch a victim off-guard.</description>
         <statBases>
             <MarketValue>3800</MarketValue>
             <ToxicEnvironmentResistance>1.5</ToxicEnvironmentResistance>
@@ -639,7 +639,7 @@
     <ThingDef ParentName="FCP_Animal_FO4_Deathclaw_Base">
         <defName>FCP_Animal_Badlands_Deathclaw</defName>
         <label>Badlands Deathclaw</label>
-        <description>A subspecies adapted to the most brutal wasteland conditions — bleached bone-dry desert and toxic flats. Their scales have taken on a rusted, desiccated appearance from years of extreme heat. Unlike other FO4 deathclaw variants, these lay eggs and reproduce freely.</description>
+        <description>A subspecies adapted to the most brutal wasteland conditions: bleached bone-dry desert and toxic flats. Their scales have taken on a rusted, desiccated appearance from years of extreme heat. Unlike other FO4 deathclaw variants, these lay eggs and reproduce freely.</description>
         <comps>
             <li Class="CompProperties_EggLayer">
                 <eggUnfertilizedDef>FCP_Egg_Badlands_Deathclaw_Unfertilized</eggUnfertilizedDef>
