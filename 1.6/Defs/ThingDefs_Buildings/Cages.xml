@@ -58,7 +58,7 @@
         </inspectorTabs>
         <designationCategory>Misc</designationCategory>
         <researchPrerequisites>
-            <li MayRequire="Rick.FCP.Tools">FCP_Research_Advanced_Agriculture</li>
+            <li>FCP_Research_Advanced_Agriculture</li>
         </researchPrerequisites>
         <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
         <comps></comps>

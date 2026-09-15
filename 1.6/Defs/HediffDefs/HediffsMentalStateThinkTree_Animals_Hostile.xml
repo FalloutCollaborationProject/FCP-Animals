@@ -10,8 +10,8 @@
     <HediffDef>
         <defName>FCP_Hediff_Spawn_Hostile_Animal</defName>
         <label>Hostile Animal</label>
-        <description>Hostile Animal.</description>
-        <descriptionShort>.</descriptionShort>
+        <description>This animal has been provoked into a lasting rage and will attack anyone who gets close.</description>
+        <descriptionShort>Provoked into a lasting rage.</descriptionShort>
         <hediffClass>HediffWithComps</hediffClass>
         <defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
         <initialSeverity>10</initialSeverity>
